@@ -14,30 +14,27 @@ get_header();
   <div class="row">
     <div class="large-12 columns">
     <ul data-orbit>
-      <li>
-		  <img src="http://placehold.it/1000x400&text=[ img 1 ]" />
-		  <div class="orbit-caption">
-		        Caption One.
-	      </div>
-	  </li>
-      <li>
-		  <img src="http://placehold.it/1000x400&text=[ img 2 ]" />
-		  <div class="orbit-caption">
-		        Caption two.
-	      </div>
-	  </li>
-      <li>
-		  <img src="http://placehold.it/1000x400&text=[ img 3 ]" />
-		  <div class="orbit-caption">
-		        Caption three.
-	      </div>
-	  </li>
-      <li>
-		  <img src="http://placehold.it/1000x400&text=[ img 4 ]" />
-		  <div class="orbit-caption">
-		        Caption four.
-	      </div>
-	  </li>
+		<?php
+			$args = array(
+				'posts_per_page' => 3,
+				'paged' => $paged,
+				'cat' => 3
+			);
+	
+			$latest = new WP_Query( $args );
+			while( $latest->have_posts() ) : $latest->the_post(); ?>
+				<li>
+					<?php 
+					if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+					  the_post_thumbnail('original');
+					} 
+					?>
+				  <div class="orbit-caption">
+					  <?php the_content(); ?>
+			      </div>
+			    </li>
+			<?php endwhile; ?>	
+		
     </ul>
     <!-- <div id="slider">
       
@@ -62,17 +59,18 @@ get_header();
 				$latest = new WP_Query( $args );
 				while( $latest->have_posts() ) : $latest->the_post(); ?>
 					<div class="large-4 columns">
-						<div class="panel clearfix text-justify">
+						<div class="clearfix text-center">
 							<?php 
 							if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							  the_post_thumbnail('medium');
 							} 
 							?>
-						<h4 class="text-center"><?php the_title(); ?></h4>
+						<h4><?php the_title(); ?></h4>
 						    <h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
 						<hr>
-				
-							<?php the_excerpt(); ?>
+				            <div class="text-justify">
+								<?php the_excerpt(); ?>
+							</div>
 						</div>
 					</div>
 				<?php endwhile; ?>
@@ -123,14 +121,34 @@ get_header();
 	
 	</div>
 	
-	<!-- Big Session -->
+	<!-- Profile Stories -->
 				<div class="row">
-					<div class="large-12-columns text-center">
-						<h4>Profile story.</h4>
-						<p class="text-left">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-						<img src="http://placehold.it/700x500&text=Biutiful Picture"/>
-						<p/>
-					</div>
+						<?php
+								$args = array(
+									'posts_per_page' => 1,
+									'paged' => $paged,
+									'cat' => 14
+								);
+		
+								$latest = new WP_Query( $args );
+								while( $latest->have_posts() ) : $latest->the_post(); ?>
+									<div class="large-12-columns text-center">
+										<div class="clearfix text-center">
+											<h4><?php the_title(); ?></h4>
+											<?php 
+											if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+											  the_post_thumbnail('original');
+											} 
+											?>
+											<hr>
+				
+										<div class="text-justify">
+											<?php the_excerpt(); ?>
+										</div>
+										</div>
+									</div>
+								<?php endwhile; ?>
+								
 				</div>
 
   <!-- Curiosities Blocks -->
@@ -148,7 +166,7 @@ get_header();
 				$latest = new WP_Query( $args );
 				while( $latest->have_posts() ) : $latest->the_post(); ?>
 					<div class="large-4 columns">
-						<div class="panel clearfix text-justify">
+						<div class="clearfix text-justify">
 							<?php 
 							if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							  the_post_thumbnail('medium');
