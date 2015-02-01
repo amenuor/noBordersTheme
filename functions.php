@@ -57,7 +57,6 @@ if (!function_exists('NoBordersSetup')) {
 }
 add_action('after_setup_theme', 'NoBordersSetup');
 
-
 if (!function_exists('NoBordersWidgetsInit')) {
 	/**
 	 * Register widget areas
@@ -164,6 +163,12 @@ require get_template_directory() . '/inc/extras.php';
  */ 
 require get_template_directory() . '/inc/NoBordersWalkerNavMenu.php';
 
+// Replaces the excerpt "more" text by a link
+add_filter('excerpt_more', 'NoBordersExcerptMore');
+function NoBordersExcerptMore($more) {
+	global $post;
+	return ' ...<br/>&nbsp;<br/><a class="button radius right" href="'. get_permalink($post->ID) . '"> Read More</a>';
+}
 /**
  * --------------------------------------------------------------
  * Theme widget & widget hooks
