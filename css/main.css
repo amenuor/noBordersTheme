@@ -9,6 +9,18 @@ body{
   max-width: 1400px;
 }
 
+.credits
+{
+    font-size: 0.75em !important;
+    text-transform: uppercase;
+}
+
+.credits a
+{
+	color: orange !important;
+    font-size: 1em !important;
+}
+
 .footer {
   background-color: #2980b9;
   padding: 1rem 4rem;
