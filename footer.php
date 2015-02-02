@@ -34,10 +34,35 @@
               </div>
             </div>
            </div>
-           <div class="row">
+           <div class="row show-for-small-only">
+			   <p>or follow us on</p>
+             <div class="small-4 columns">
+				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/facebook-icon.png" />
+				 </a>
+		     </div>
+             <div class="small-4 columns">
+				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/flickr-icon.png" /></a>
+		     </div>
+             <div class="small-4 columns">
+				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/instagram-icon.png" /></a>
+		     </div>
+		 </div>
+         <div class="row show-for-small-only">
+             <div class="small-4 columns">
+				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png" /></a>
+		     </div>
+             <div class="small-4 columns">
+				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/youtube-icon.png" /></a>
+		     </div>
+             <div class="small-4 columns">
+				 <a href="/feed"><img src="<?php echo get_template_directory_uri();?>/img/rss-icon.png" /></a>
+		     </div>
+		   </div>
+           <div class="row show-for-medium-up">
 			   <p>or follow us on</p>
              <div class="small-2 columns">
-				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/facebook-icon.png" /></a>
+				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/facebook-icon.png" />
+				 </a>
 		     </div>
              <div class="small-2 columns">
 				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/flickr-icon.png" /></a>
