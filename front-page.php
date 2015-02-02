@@ -10,13 +10,20 @@ get_header();
 ?> 
 
 <!-- First Band (Slider) -->
-
+        
   <div class="row">
     <div class="large-12 columns">
     <ul data-orbit>
+			<li>
+				<!-- Map! -->
+				  <div id="map" style="width:1000px; height: 400px;"></div>
+				  <div class="orbit-caption">
+					  The Railroad diaries - Map
+			      </div>
+			</li>
 		<?php
 			$args = array(
-				'posts_per_page' => 3,
+				'posts_per_page' => 4,
 				'paged' => $paged,
 				'cat' => 3
 			);
@@ -33,8 +40,7 @@ get_header();
 					  <?php the_content(); ?>
 			      </div>
 			    </li>
-			<?php endwhile; ?>	
-		
+			<?php endwhile; ?>		
     </ul>
     <!-- <div id="slider">
       

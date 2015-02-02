@@ -133,6 +133,8 @@ if (!function_exists('NoBordersEnqueueScripts')) {
 		wp_enqueue_style('foundationicons', 'http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css');
 
 		wp_enqueue_script('jquery');
+		wp_enqueue_script('gmap', 'https://maps.googleapis.com/maps/api/js?&sensor=false');
+		wp_enqueue_script('noborders', get_template_directory_uri() . '/js/noborders.js');
 		wp_enqueue_script('modernizr-script', get_template_directory_uri() . '/js/vendor/modernizr.min.js');
 		wp_enqueue_script('html5-shiv-script', get_template_directory_uri() . '/js/vendor/html5shiv.js');
 		wp_enqueue_script('fastclick', get_template_directory_uri() . '/js/vendor/fastclick.js');
