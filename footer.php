@@ -59,6 +59,17 @@
 		     </div>
 		   </div>
            <div class="row show-for-medium-up">
+		   	
+			<div id="legend" style="visibility: hidden;">
+				<p class="text-center" style="color: orange">Legend</p>
+		   		<p><img src="<?php echo get_template_directory_uri();?>/img/photo.png" width="24px"/> Photo</p>
+		   		<p><img src="<?php echo get_template_directory_uri();?>/img/people.png" width="24px" /> People</p>
+		   		<p><img src="<?php echo get_template_directory_uri();?>/img/blog.png" width="24px" /> Blog</p>
+		   		<p><img src="<?php echo get_template_directory_uri();?>/img/music.png" width="24px" /> Music</p>
+		   		<p><img src="<?php echo get_template_directory_uri();?>/img/articles.png" width="24px" /> Articles</p>
+		   		<p><img src="<?php echo get_template_directory_uri();?>/img/video.png" width="24px" /> Video</p>
+		   	</div>
+			   
 			   <p>or follow us on</p>
              <div class="small-2 columns">
 				 <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/facebook-icon.png" />

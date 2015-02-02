@@ -3,6 +3,27 @@ body{
     padding: 1rem 1rem !important;
 }
 
+/*GOOGLE MAP*/
+#legend {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.9);
+  padding: 10px;
+  margin-left: 60px;
+  border: 1px solid #000;
+}
+#legend h3 {
+  margin-top: 0;
+}
+#legend img {
+  vertical-align: middle;
+  display: inline !important;
+}
+
+#legend p
+{
+	margin-bottom: 0.50rem !important;
+}
 
 /* FOOTER */
 .full-width {

@@ -39,7 +39,7 @@ get_header();
 </div>
 </div>
 
-<div class="row show-for-medium-up">
+<div class="row show-for-medium-up">	
 <div class="large-12 columns">
 	<ul data-orbit>
 		<li>

@@ -21,6 +21,11 @@
 		
 		<!--wordpress head-->
 		<?php wp_head(); ?>
+		
+		<script type="text/javascript">
+			window.templateURL = '<?php echo get_template_directory_uri();?>';
+		</script>
+		
 	</head>
 	<body <?php body_class(); ?>>
 		<!--[if lt IE 8]>

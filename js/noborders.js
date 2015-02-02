@@ -6,10 +6,10 @@ function initMap() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 11,
+        zoom: 4,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(32.6700, 53.9400), // Iran
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -23,10 +23,21 @@ function initMap() {
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
+	var icon = new google.maps.MarkerImage(
+		        window.templateURL + '/img/photo.png', //url
+			    new google.maps.Size(71, 71),
+			    new google.maps.Point(0, 0),
+			    new google.maps.Point(17, 34),
+			    new google.maps.Size(25, 25)
+	   );
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6700, -73.9400),
+        position: new google.maps.LatLng(32.6700, 53.9400),
         map: map,
-        title: 'Snazzy!'
+        title: 'Snazzy!',
+		icon: icon
     });
+	
+	map.controls[google.maps.ControlPosition.LEFT_CENTER].push(
+	  document.getElementById('legend'));
 }
