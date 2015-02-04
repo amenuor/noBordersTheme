@@ -24,6 +24,90 @@
 		
 		<script type="text/javascript">
 			window.templateURL = '<?php echo get_template_directory_uri();?>';
+			
+			initMarkers();
+			initPath();
+			
+			function initPath()
+			{
+				window.flightPlanCoordinates = [
+				    new google.maps.LatLng(37.772323, -122.214897),
+				    new google.maps.LatLng(21.291982, -157.821856),
+				    new google.maps.LatLng(-18.142599, 178.431),
+				    new google.maps.LatLng(-27.46758, 153.027892),
+					new google.maps.LatLng(32.6700, 53.9400)
+				  ];
+				
+			}
+			
+			function initMarkers()
+			{				
+				window.markers = [];
+				icons = initIcons();
+	
+				markers.push({
+					latLng: new google.maps.LatLng(32.6700, 53.9400),
+					title: 'This is a cool picture!',
+					icon: icons['PHOTO_KEY'],
+					popupContent: 'yei!'
+				});				
+			}
+			
+			function initIcons()
+			{
+				icons = {};
+				icons['PHOTO_KEY'] = new google.maps.MarkerImage(
+			        window.templateURL + '/img/photo.png', //url
+				    new google.maps.Size(71, 71),
+				    new google.maps.Point(0, 0),
+					new google.maps.Point(17, 34),
+				    new google.maps.Size(35, 35)
+			   );
+
+			   	icons['PEOPLE_KEY'] = new google.maps.MarkerImage(
+					window.templateURL + '/img/people.png', //url
+			   	    new google.maps.Size(71, 71),
+				    new google.maps.Point(0, 0),
+				    new google.maps.Point(17, 34),
+				    new google.maps.Size(35, 35)
+			   );
+
+			  	icons['BLOG_KEY'] = new google.maps.MarkerImage(
+			        window.templateURL + '/img/blog.png', //url
+				    new google.maps.Size(71, 71),
+				    new google.maps.Point(0, 0),
+				    new google.maps.Point(17, 34),
+				    new google.maps.Size(35, 35)
+			   );
+
+			 	icons['MUSIC_KEY'] = new google.maps.MarkerImage(
+					window.templateURL + '/img/music.png', //url
+					new google.maps.Size(71, 71),
+			    	new google.maps.Point(0, 0),
+			    	new google.maps.Point(17, 34),
+			    	new google.maps.Size(35, 35)
+			  );
+
+				icons['ARTICLE_KEY'] = new google.maps.MarkerImage(
+					window.templateURL + '/img/articles.png', //url
+					new google.maps.Size(71, 71),
+				  	new google.maps.Point(0, 0),
+				  	new google.maps.Point(17, 34),
+				  	new google.maps.Size(35, 35)
+				);
+
+				icons['VIDEO_KEY'] = new google.maps.MarkerImage(
+					window.templateURL + '/img/video.png', //url
+					new google.maps.Size(71, 71),
+				  	new google.maps.Point(0, 0),
+				  	new google.maps.Point(17, 34),
+				  	new google.maps.Size(35, 35)
+				);
+				
+				return icons;
+			}
+			
+			
 		</script>
 		
 	</head>
