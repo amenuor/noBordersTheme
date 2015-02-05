@@ -170,6 +170,11 @@ function NoBordersExcerptMore($more) {
 	global $post;
 	return ' ...<br/>&nbsp;<br/><a class="button radius right" href="'. get_permalink($post->ID) . '"> Read More</a>';
 }
+
+function NoBordersExcerptLength( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'NoBordersExcerptLength', 999 );
 /**
  * --------------------------------------------------------------
  * Theme widget & widget hooks
