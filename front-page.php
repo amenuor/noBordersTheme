@@ -46,7 +46,7 @@ get_header();
 			<!-- Map! -->
 			<div id="map" style="width:1000px; height: 400px;"></div>
 			<div class="orbit-caption">
-				The Railroad diaries - Map
+				Map of The Railroad diaries - Click on the icons to see more of the project!
 			</div>
 		</li>
 		<?php
