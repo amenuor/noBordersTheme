@@ -168,17 +168,32 @@ require get_template_directory() . '/inc/NoBordersWalkerNavMenu.php';
 add_filter('excerpt_more', 'NoBordersExcerptMore');
 function NoBordersExcerptMore($more) {
 	global $post;
-	return ' ...<br/>&nbsp;<br/><a class="button radius right" href="'. get_permalink($post->ID) . '"> Read More</a>';
+	return ' ...<br/>&nbsp;<br/><a class="button radius right" href="'. get_permalink($post->ID) . '">' .
+		__("Read More", "noborders") .
+	'</a>';
 }
 
 function NoBordersExcerptLength( $length ) {
 	return 30;
 }
 add_filter( 'excerpt_length', 'NoBordersExcerptLength', 999 );
+
+// Adds a widget area to house qtranslate flags. See also accompanying css.
+if (function_exists('register_sidebar')) {
+ register_sidebar(array(
+ 'name' => 'Extra Widget After Navbar',
+ 'id' => 'extra-widget',
+ 'description' => 'Extra widget after the navbar',
+ 'before_widget' => '',
+ 'after_widget' => '',
+ 'before_title' => '<h2>',
+ 'after_title' => '</h2>'
+ ));
+}
+
 /**
  * --------------------------------------------------------------
  * Theme widget & widget hooks
  * --------------------------------------------------------------
  */
 require get_template_directory() . '/inc/template-widgets-hook.php';
-

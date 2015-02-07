@@ -133,8 +133,7 @@
 				</div><!--.site-branding-->
 				
 				<div class="row">
-					<div class="large-12-columns text-center" style="margin-bottom: 20px">
-
+					<div class="small-12 medium-9 large-10 columns text-center" style="margin-bottom: 20px">
 
 <nav id="menu" class="top-bar" data-topbar>
 	<ul class="title-area">
@@ -144,11 +143,24 @@
 <?php
 		$items_wrap = '<section class="top-bar-section"><ul class="left">%3$s</ul></section>'; 
 		wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'items_wrap' => $items_wrap, 'walker' => new NoBordersWalkerNavMenu ) ); ?>
+
 </nav>
 
-
+					</div>
+					<div class="medium-3 large-2 columns text-center show-for-medium-up">
+						<?php if (function_exists('dynamic_sidebar')): 
+							dynamic_sidebar('Extra Widget After Navbar');
+						endif; ?>
 					</div>
 				</div>
+				<div class="row show-for-small-only">
+					<div class="small-12 columns text-center">
+						<?php if (function_exists('dynamic_sidebar')): 
+							dynamic_sidebar('Extra Widget After Navbar');
+						endif; ?>
+					</div>
+				</div>
+				
 				
 			</header>
 			

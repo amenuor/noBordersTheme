@@ -46,7 +46,7 @@ get_header();
 			<!-- Map! -->
 			<div id="map" style="width:1000px; height: 400px;"></div>
 			<div class="orbit-caption">
-				Map of The Railroad diaries - Click on the icons to see more of the project!
+				<?php _e("Map of The Railroad diaries - Click on the icons to see more of the project!", "noborders"); ?>
 			</div>
 		</li>
 		<?php
@@ -77,7 +77,7 @@ get_header();
 <!-- Latest Blog Posts Blocks -->
 
 <div class="row">
-<h4 class="text-center">Latest Blog Posts</h4>
+<h4 class="text-center"><?php _e("Latest Blog Posts", "noborders"); ?></h4>
 		
 <?php
 $args = array(
@@ -112,14 +112,14 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
 <div class="large-12 columns">
     
 <div class="panel">
-<h4>Get in touch!</h4>
+<h4><?php _e("Get in touch!", "noborders"); ?></h4>
             
 <div class="row">
 	<div class="large-9 columns">
-		<p>We'd love to hear from you, you attractive person you.</p>
+		<p><?php _e("We'd love to hear from you, you attractive person you.", "noborders"); ?></p>
 	</div>
 	<div class="large-3 columns">
-		<a href="/contacts" class="radius button right">Contact Us</a>
+		<a href="/contacts" class="radius button right"><?php _e("Contact Us", "noborders"); ?></a>
 	</div>
 </div>
 </div>
@@ -132,7 +132,7 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
 <!-- Latest articles from our projects Blocks -->
 
 <div class="row">
-<h4 class="text-center">Latest articles from our projects</h4>
+<h4 class="text-center"><?php _e("Latest articles from our projects", "noborders"); ?></h4>
 		
 <?php
 $args = array(
@@ -196,7 +196,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 <!-- Curiosities Blocks -->
 
 <div class="row">
-<h4 class="text-center">Curiosities</h4>
+<h4 class="text-center"><?php _e("Curiosities", "noborders"); ?></h4>
 		
 <?php
 $args = array(

@@ -1,0 +1,353 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NoBorders Theme v1.0\n"
+"POT-Creation-Date: 2015-02-07 02:07+0100\n"
+"PO-Revision-Date: 2015-02-07 02:12+0100\n"
+"Last-Translator: \n"
+"Language-Team: YanchWare <contacts@yanchware.com>\n"
+"Language: EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /Users/Angelo/Projects/GiuliasProject/wp-content/"
+"themes/noBordersTheme\n"
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/404.php:7
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/404.php:11
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/404.php:20
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:167
+msgid "Search"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/404.php:31
+msgid "Most Used Categories"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/404.php:48
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:30
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:38
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:41
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:44
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:47
+msgid "Asides"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:50
+msgid "Images"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:53
+msgid "Videos"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:56
+msgid "Quotes"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:59
+msgid "Links"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/archive.php:62
+msgid "Archives"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:25
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:45
+msgid "Comment navigation"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:27
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:47
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:28
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:48
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:57
+msgid "Comments are closed."
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:95
+msgid "Name"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:101
+msgid "Email"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:107
+msgid "Website"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/comments.php:120
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-aside.php:18
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-link.php:30
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-page.php:15
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-quote.php:18
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-single.php:19
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content.php:28
+msgid "Pages:"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-aside.php:33
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-aside.php:43
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-link.php:43
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-link.php:53
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-quote.php:30
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-quote.php:40
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-single.php:29
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-single.php:32
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content.php:42
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content.php:52
+msgid ", "
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/content-single.php:40
+#, php-format
+msgid ""
+"<span class=\"glyphicon glyphicon-link\"></span> <a href=\"%1$s\" title="
+"\"Permalink to %2$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:20
+msgid "Subscribe to our newsletter!"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:30
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:43
+msgid "Subscribe"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:51
+msgid "or follow us on"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:64
+msgid "Legend"
+msgstr "Legenda"
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:65
+msgid "Photo"
+msgstr "Foto"
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:66
+msgid "People"
+msgstr "Profilo"
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:67
+msgid "Blog"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:68
+msgid "Music"
+msgstr "Musica"
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:69
+msgid "Article"
+msgstr "Articolo"
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/footer.php:70
+msgid "Video"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/front-page.php:49
+msgid ""
+"Map of The Railroad diaries - Click on the icons to see more of the project!"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/front-page.php:80
+msgid "Latest Blog Posts"
+msgstr "Ultimi post dal Blog"
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/front-page.php:115
+msgid "Get in touch!"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/front-page.php:119
+msgid "We'd love to hear from you, you attractive person you."
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/front-page.php:122
+msgid "Contact Us"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/front-page.php:135
+msgid "Latest articles from our projects"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/front-page.php:199
+msgid "Curiosities"
+msgstr "Curiositá"
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/functions.php:39
+msgid "Primary Menu"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/functions.php:67
+msgid "Header right"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/functions.php:76
+msgid "Navigation bar right"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/functions.php:85
+msgid "Sidebar left"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/functions.php:94
+msgid "Sidebar right"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/functions.php:103
+msgid "Footer left"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/functions.php:112
+msgid "Footer right"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/functions.php:172
+msgid "Read More"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/image.php:24
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/image.php:42
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/image.php:43
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/no-results.php:10
+msgid "Nothing Found"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/no-results.php:15
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/no-results.php:17
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/no-results.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/extras.php:133
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:18
+msgid "Posted in"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:43
+msgid "Pingback:"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:45
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:86
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:148
+msgid "Edit"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:93
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:98
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:110
+msgid "Reply"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:111
+msgid "Log in to Reply"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:204
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:277
+#, php-format
+msgid ""
+"<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
+"%2$s</span>"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:285
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: /Users/Angelo/Projects/GiuliasProject/wp-content/themes/noBordersTheme/inc/template-tags.php:302
+msgid "Tagged"
+msgstr ""

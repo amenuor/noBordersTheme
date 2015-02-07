@@ -17,7 +17,7 @@
 			<div class="row">
 				<div class="large-12 columns">
 					<div class="signup-panel">
-						<p class="welcome">Subscribe to our newsletter! </p>
+						<p class="welcome"><?php _e("Subscribe to our newsletter!", "noborders"); ?> </p>
 						<form>
 							<div class="row collapse show-for-medium-up">
 								<div class="small-2 columns">
@@ -27,7 +27,7 @@
 									<input type="text" placeholder="Email">
 								</div>
 								<div class="small-2 columns">
-									<a href="#" class="button radius">Subscribe</a>
+									<a href="#" class="button radius"><?php _e("Subscribe", "noborders"); ?></a>
 								</div>					
 							</div>
 							<div class="row collapse show-for-small-only">
@@ -40,7 +40,7 @@
 							</div>
 							<div class="row collapse show-for-small-only">
 								<div class="small-12 columns text-centered lower">
-									<a href="#" class="button radius lower">Subscribe</a>
+									<a href="#" class="button radius lower"><?php _e("Subscribe", "noborders"); ?></a>
 								</div>					
 							</div>
 						</form>
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 
-			<p>or follow us on</p>
+			<p><?php _e("or follow us on", "noborders"); ?></p>
 			<div class="medium-12 columns">
 				<a href="#"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/facebook-icon.png" /></a>
 				<a href="#"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/flickr-icon.png" /></a>
@@ -61,13 +61,13 @@
 			<div class="row show-for-medium-up">
 		   	
 				<div id="legend" style="visibility: hidden;">
-					<p class="text-center" style="color: orange">Legend</p>
-					<p><img src="<?php echo get_template_directory_uri();?>/img/photo.png" width="24px"/> Photo</p>
-					<p><img src="<?php echo get_template_directory_uri();?>/img/people.png" width="24px" /> People</p>
-					<p><img src="<?php echo get_template_directory_uri();?>/img/blog.png" width="24px" /> Blog</p>
-					<p><img src="<?php echo get_template_directory_uri();?>/img/music.png" width="24px" /> Music</p>
-					<p><img src="<?php echo get_template_directory_uri();?>/img/articles.png" width="24px" /> Articles</p>
-					<p><img src="<?php echo get_template_directory_uri();?>/img/video.png" width="24px" /> Video</p>
+					<p class="text-center" style="color: orange"><?php _e("Legend", "noborders"); ?></p>
+					<p><img src="<?php echo get_template_directory_uri();?>/img/photo.png" width="24px"/> <?php _e("Photo", "noborders"); ?></p>
+					<p><img src="<?php echo get_template_directory_uri();?>/img/people.png" width="24px" /> <?php _e("People", "noborders"); ?></p>
+					<p><img src="<?php echo get_template_directory_uri();?>/img/blog.png" width="24px" /> <?php _e("Blog", "noborders"); ?></p>
+					<p><img src="<?php echo get_template_directory_uri();?>/img/music.png" width="24px" /> <?php _e("Music", "noborders"); ?></p>
+					<p><img src="<?php echo get_template_directory_uri();?>/img/articles.png" width="24px" /> <?php _e("Article", "noborders"); ?></p>
+					<p><img src="<?php echo get_template_directory_uri();?>/img/video.png" width="24px" /> <?php _e("Video", "noborders"); ?></p>
 				</div>
 			</div>
 			   
