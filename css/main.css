@@ -25,6 +25,52 @@ a{
 	background: #fff !important;
 }
 
+.top-bar-section li.dropdown, .top-bar-section ul.dropdown
+{
+	position: relative !important;
+	height: 45px !important;
+	min-width: inherit !important;
+	width: 100% !important;
+	clip: initial !important;
+	left: 0 !important;
+}
+
+@media only screen and (min-width: 40.063em)
+{
+	.top-bar-section li.dropdown, .top-bar-section ul.dropdown
+	{
+		position: relative !important;
+		height: 45px !important;
+		min-width: inherit !important;
+		width: 100px !important;
+		clip: initial !important;
+	}
+
+	.top-bar-section ul.dropdown li
+	{
+		border: 1px #000 solid;
+	}
+
+	.top-bar-section li.dropdown:hover, .top-bar-section ul.dropdown, .top-bar-section ul.dropdown:hover
+	{
+		overflow: visible !important;
+		height: initial;
+	}
+
+	.top-bar-section .dropdown li .dropdown
+	{
+		top: -45px !important;
+		left: 100% !important;
+		width: 200px !important;
+	}
+
+	.top-bar-section ul.dropdown li ul.dropdown li.dropdown
+	{
+		top: 0 !important;
+		left: 0 !important;
+	}
+}
+
 .top-bar-section li.hover > a:not(.button) {
 	background-color: #fff !important;
 	background: #fff !important;
