@@ -139,8 +139,7 @@ if (!function_exists('NoBordersEnqueueScripts')) {
 		wp_enqueue_script('html5-shiv-script', get_template_directory_uri() . '/js/vendor/html5shiv.js');
 		wp_enqueue_script('fastclick', get_template_directory_uri() . '/js/vendor/fastclick.js');
 		wp_enqueue_script('placeholder', get_template_directory_uri() . '/js/vendor/placeholder.js');
-		wp_enqueue_script('foundation', get_template_directory_uri() . '/js/foundation.min.js', array('jquery')); 		wp_enqueue_script('masonry', get_template_directory_uri() . '/js/vendor/masonry.pkgd.min.js');
-		wp_enqueue_style('noborders-style', get_stylesheet_uri());
+		wp_enqueue_script('foundation', get_template_directory_uri() . '/js/foundation.min.js', array('jquery')); 		wp_enqueue_style('noborders-style', get_stylesheet_uri());
 			
 	}// NoBordersEnqueueScripts
 }
@@ -197,3 +196,10 @@ if (function_exists('register_sidebar')) {
  * --------------------------------------------------------------
  */
 require get_template_directory() . '/inc/template-widgets-hook.php';
+
+/**
+ * --------------------------------------------------------------
+ * Theme widget & widget hooks
+ * --------------------------------------------------------------
+ */
+require get_template_directory() . '/inc/adm-settings-pages.php';

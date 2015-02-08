@@ -13,26 +13,26 @@ get_header();
         
 <div class="row show-for-small-only">
 	<div class="small-12 columns">
-		<ul data-orbit>
-			<?php
-			$args = array(
-				'posts_per_page' => 4,
-				'paged' => $paged,
-				'cat' => 3
-			);
-	
-			$latest = new WP_Query( $args );
-			while( $latest->have_posts() ) : $latest->the_post(); ?>
-			<li>
-				<?php 
-				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-					the_post_thumbnail('original');
-				} 
-				?>
-				<div class="orbit-caption">
-					<?php the_content(); ?>
-				</div>
-			</li>
+	<ul data-orbit>
+		<?php
+		$args = array(
+			'posts_per_page' => 4,
+			'paged' => $paged,
+			'cat' => 3
+		);
+
+		$latest = new WP_Query( $args );
+		while( $latest->have_posts() ) : $latest->the_post(); ?>
+		<li>
+			<?php 
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+				the_post_thumbnail('original');
+			} 
+			?>
+			<div class="orbit-caption">
+				<?php the_content(); ?>
+			</div>
+		</li>
 		<?php endwhile; ?>		
 	</ul>
 	<hr />
@@ -147,7 +147,7 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
 <div class="clearfix text-center">
 <?php 
 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-the_post_thumbnail('medium');
+	the_post_thumbnail('medium');
 } 
 ?>
 <h4><?php the_title(); ?></h4>
@@ -155,7 +155,7 @@ the_post_thumbnail('medium');
 <hr>
 				
 <div class="text-justify">
-<?php the_excerpt(); ?>
+	<?php the_excerpt(); ?>
 </div>
 </div>
 </div>
@@ -179,13 +179,13 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
 <h4><?php the_title(); ?></h4>
 <?php 
 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-	the_post_thumbnail('original');
+the_post_thumbnail('original');
 } 
 ?>
 <hr>
 				
 <div class="text-justify">
-	<?php the_excerpt(); ?>
+<?php the_excerpt(); ?>
 </div>
 </div>
 </div>
@@ -226,5 +226,38 @@ the_post_thumbnail('medium');
 <?php endwhile; ?>
 	
 </div>
+
+<div class="row show-for-medium-up">
+<div id="legend" style="visibility: hidden;">
+<p class="text-center" style="color: orange">
+<?php _e("Legend", "noborders"); ?>
+</p>
+<p>
+<img src="<?php echo get_template_directory_uri();?>/img/photo.png" width="24px"/> 
+<?php _e("Photo", "noborders"); ?>
+</p>
+<p>
+<img src="<?php echo get_template_directory_uri();?>/img/people.png" width="24px" /> 
+<?php _e("People", "noborders"); ?>
+</p>
+<p>
+<img src="<?php echo get_template_directory_uri();?>/img/blog.png" width="24px" /> 
+<?php _e("Blog", "noborders"); ?>
+</p>
+<p>
+<img src="<?php echo get_template_directory_uri();?>/img/music.png" width="24px" /> 
+<?php _e("Music", "noborders"); ?>
+</p>
+<p>
+<img src="<?php echo get_template_directory_uri();?>/img/articles.png" width="24px" /> 
+<?php _e("Article", "noborders"); ?>
+</p>
+<p>
+<img src="<?php echo get_template_directory_uri();?>/img/video.png" width="24px" /> 
+<?php _e("Video", "noborders"); ?>
+</p>
+</div>
+</div>
+
 
 <?php get_footer(); ?> 

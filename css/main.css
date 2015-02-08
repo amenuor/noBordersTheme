@@ -20,6 +20,30 @@ a{
 	color: #d14836 !important;
 }
 
+.tabs dd.active a, .tabs .tab-title.active a
+{
+	border-top: 1px solid #dd4b39;
+	border-left: 1px solid #dd4b39;
+	border-right: 1px solid #dd4b39;
+	border-bottom: 1px solid #fff;
+}
+
+.tabs dd a, .tabs .tab-title a
+{
+	border-bottom: 1px solid #dd4b39;
+}
+
+.tabs-content
+{
+	padding: 1rem;
+	top: -2px;
+	position: relative;
+	z-index: -10;
+	border: 1px solid #dd4b39;
+	border-right: 1px solid #dd4b39;
+	border-bottom: 1px solid #dd4b39;
+}
+
 /* TOP BAR */
 .top-bar {
 	background: #fff !important;
@@ -296,10 +320,4 @@ section.active {
 
 p.title {
 	border-bottom: 1px solid #cccccc !important;
-}
-
-
-/* MASONRY */
-
-.masonry-brick { width: 220px; margin: 10px; float: left;  }
-#masonryContainer { width: 0 auto; }              
+}          
