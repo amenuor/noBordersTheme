@@ -73,7 +73,15 @@ get_header();
 <hr />
 </div>
 </div>
-  
+
+<div class="row text-center">
+	<div class="small-12 columns">
+		<div id="departureBoard"></div>
+	</div>
+</div>
+
+<hr />
+
 <!-- Latest Blog Posts Blocks -->
 
 <div class="row">
@@ -258,6 +266,28 @@ the_post_thumbnail('medium');
 </p>
 </div>
 </div>
+
+		<script>
+					
+			var board = new DepartureBoard (document.getElementById ('departureBoard'), { rowCount: 4, letterCount: 28 }); 
+			
+			setInterval(updateBoard, 24000);	
+			function updateBoard()
+			{
+				board.setValue (['    The Railroad Diaries    ', 
+				 				 '          Samarkand         ',
+				 				 '3  days                     ',
+								 '52 steps                    ']);
+				setTimeout(function(){
+				board.setValue (['    The Railroad Diaries    ', 
+				 				 '          Samarkand         ',
+				 				 '5  articles                 ',
+								 '12 blog posts               ']);
+								}, 12000)
+			}
+			updateBoard();			
+
+		</script>
 
 
 <?php get_footer(); ?> 
