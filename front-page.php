@@ -274,16 +274,16 @@ the_post_thumbnail('medium');
 			setInterval(updateBoard, 24000);	
 			function updateBoard()
 			{
-				board.setValue (['    The Railroad Diaries    ', 
-				 				 '          Samarkand         ',
-				 				 '3  days                     ',
-								 '52 steps                    ']);
+				board.setValue (['    <?php _e('The Railroad Diaries', 'noborders') ?>    ', 
+				 				 '          <?php _e('Samarkand', 'noborders') ?>         ',
+				 				 '<?php _e('3  days', 'noborders') ?>                     ',
+								 '<?php _e('52 steps', 'noborders') ?>                    ']);
 				setTimeout(function(){
-				board.setValue (['    The Railroad Diaries    ', 
-				 				 '          Samarkand         ',
-				 				 '5  articles                 ',
-								 '12 blog posts               ']);
-								}, 12000)
+					board.setValue (['    <?php _e('The Railroad Diaries', 'noborders') ?>    ', 
+				 					 '          <?php _e('Samarkand', 'noborders') ?>         ',
+ 				 					 '<?php _e('5  articles', 'noborders') ?>                     ',
+				 					 '<?php _e('12 blog posts', 'noborders') ?>                    ']);
+				}, 12000)
 			}
 			updateBoard();			
 
