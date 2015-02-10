@@ -267,27 +267,27 @@ the_post_thumbnail('medium');
 </div>
 </div>
 
-		<script>
-					
-			var board = new DepartureBoard (document.getElementById ('departureBoard'), { rowCount: 4, letterCount: 28 }); 
+<script>
 			
-			setInterval(updateBoard, 24000);	
-			function updateBoard()
-			{
-				board.setValue (['    <?php _e('The Railroad Diaries', 'noborders') ?>    ', 
-				 				 '          <?php _e('Samarkand', 'noborders') ?>         ',
-				 				 '<?php _e('3  days', 'noborders') ?>                     ',
-								 '<?php _e('52 steps', 'noborders') ?>                    ']);
-				setTimeout(function(){
-					board.setValue (['    <?php _e('The Railroad Diaries', 'noborders') ?>    ', 
-				 					 '          <?php _e('Samarkand', 'noborders') ?>         ',
- 				 					 '<?php _e('5  articles', 'noborders') ?>                     ',
-				 					 '<?php _e('12 blog posts', 'noborders') ?>                    ']);
-				}, 12000)
-			}
-			updateBoard();			
+	var board = new DepartureBoard (document.getElementById ('departureBoard'), { rowCount: 4, letterCount: 28 }); 
+	
+	setInterval(updateBoard, 24000);	
+	function updateBoard()
+	{
+		board.setValue (['    <?php _e('The Railroad Diaries', 'noborders') ?>    ', 
+		 				 '          <?php _e('Samarkand', 'noborders') ?>         ',
+		 				 '<?php _e('3  days', 'noborders') ?>                     ',
+						 '<?php _e('52 steps', 'noborders') ?>                    ']);
+		setTimeout(function(){
+			board.setValue (['    <?php _e('The Railroad Diaries', 'noborders') ?>    ', 
+		 					 '          <?php _e('Samarkand', 'noborders') ?>         ',
+		 					 '<?php _e('5  articles', 'noborders') ?>                     ',
+		 					 '<?php _e('12 blog posts', 'noborders') ?>                    ']);
+		}, 12000)
+	}
+	updateBoard();			
 
-		</script>
+</script>
 
 
 <?php get_footer(); ?> 

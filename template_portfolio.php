@@ -9,67 +9,56 @@ get_header();
 ?>
 
 <div class="row">
-  <div class="large-12 columns">
-    <div id="masonryContainer">
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x300&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x600&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x700&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x400&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x200&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x300&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x600&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x700&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x400&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x200&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x200&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x300&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x600&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x700&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x400&text=Item">
-      </div>
-      <div class="masonry-brick">
-        <img src="http://placehold.it/500x200&text=Item">
-      </div>
-    </div>
+  <div class="large-6 columns verticalBar">
+	<h1><?php _e('Sections', 'noborders');?></h1>
+  	<ul data-orbit>
+  		<?php
+  		$args = array(
+  			'posts_per_page' => 4,
+  			'paged' => $paged,
+  			'cat' => 5
+  		);
+
+  		$latest = new WP_Query( $args );
+  		while( $latest->have_posts() ) : $latest->the_post(); ?>
+  		<li>
+  			<?php 
+  			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+  				the_post_thumbnail('original');
+  			} 
+  			?>
+  			<div class="orbit-caption">
+<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+  			</div>
+  		</li>
+  		<?php endwhile; ?>		
+  	</ul>
+  </div>
+  <div class="large-6 columns">
+	<h1><?php _e('Countries', 'noborders');?></h1>
+  	<ul data-orbit>
+  		<?php
+  		$args = array(
+  			'posts_per_page' => 4,
+  			'paged' => $paged,
+  			'cat' => 6
+  		);
+
+  		$latest = new WP_Query( $args );
+  		while( $latest->have_posts() ) : $latest->the_post(); ?>
+  		<li>
+  			<?php 
+  			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+  				the_post_thumbnail('original');
+  			} 
+  			?>
+  			<div class="orbit-caption">
+  				<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+  			</div>
+  		</li>
+  		<?php endwhile; ?>		
+  	</ul>
   </div>
 </div>
-
-<script type="text/javascript">
-jQuery(window).load(function(){
-  jQuery('#masonryContainer').masonry({  
-    itemSelector: '.masonry-brick',
-    columnWidth: 240
-  });  
-});    
-</script>
 
 <?php get_footer(); ?> 
