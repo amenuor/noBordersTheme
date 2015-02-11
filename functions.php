@@ -134,6 +134,7 @@ if (!function_exists('NoBordersEnqueueScripts')) {
 		wp_enqueue_style('noborders-style', get_stylesheet_uri());
 		wp_enqueue_style('elslidecustom', get_template_directory_uri() . '/css/elastslide/custom.css');
 		wp_enqueue_style('elslide-style', get_template_directory_uri() . '/css/elastslide/elastislide.css');
+		wp_enqueue_style('timeline-style', get_template_directory_uri() . '/css/timeline.css');
 		wp_enqueue_style('foundationicons', 'http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css');
 
 		wp_enqueue_script('jquery');
