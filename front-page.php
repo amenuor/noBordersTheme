@@ -74,9 +74,15 @@ get_header();
 </div>
 </div>
 
-<div class="row text-center">
+<div class="row text-center show-for-medium-up">
 	<div class="small-12 columns">
 		<div id="departureBoard"></div>
+	</div>
+</div>
+
+<div class="row text-center show-for-small-only">
+	<div class="small-12 columns">
+		<div id="departureBoardForSmall"></div>
 	</div>
 </div>
 
@@ -268,7 +274,9 @@ the_post_thumbnail('medium');
 </div>
 
 <script>
-			
+	
+if(jQuery('#departureBoard').is(':visible'))
+{
 	var board = new DepartureBoard (document.getElementById ('departureBoard'), { rowCount: 4, letterCount: 28 }); 
 	
 	setInterval(updateBoard, 24000);	
@@ -286,7 +294,28 @@ the_post_thumbnail('medium');
 		}, 12000)
 	}
 	updateBoard();			
-
+}else
+{
+	var boardForSmall = new DepartureBoard (document.getElementById ('departureBoardForSmall'), { rowCount: 5, letterCount: 16 }); 
+	
+	setInterval(updateBoardForSmall, 24000);	
+	function updateBoardForSmall()
+	{
+		boardForSmall.setValue (['  <?php _e('The Railroad', 'noborders') ?>  ', 
+		 				         '    <?php _e('Diaries', 'noborders') ?>     ',
+		 				         '   <?php _e('Samarkand', 'noborders') ?>    ',
+		 				         '<?php _e('3  days', 'noborders') ?>         ',
+						         '<?php _e('52 steps', 'noborders') ?>        ']);
+		setTimeout(function(){
+			boardForSmall.setValue (['  <?php _e('The Railroad', 'noborders') ?>  ', 
+		 				         '    <?php _e('Diaries', 'noborders') ?>     ',
+		 				         '   <?php _e('Samarkand', 'noborders') ?>    ',
+		 					     '<?php _e('5  articles', 'noborders') ?>     ',
+		 					     '<?php _e('12 blog posts', 'noborders') ?>   ']);
+		}, 12000)
+	}
+	updateBoardForSmall();			
+}
 </script>
 
 
