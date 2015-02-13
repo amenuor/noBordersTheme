@@ -26,7 +26,7 @@ get_header();
 
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-movie">
-				<img src="<?php echo get_template_directory_uri();?>/img/movie.png" alt="Movie">
+				<img src="<?php echo get_template_directory_uri();?>/img/video.png" alt="Movie">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
@@ -88,5 +88,27 @@ get_header();
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section> <!-- cd-timeline -->
+
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		var $timeline_block = $('.cd-timeline-block');
+
+		//hide timeline blocks which are outside the viewport
+		$timeline_block.each(function(){
+			if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+			}
+		});
+
+		//on scolling, show/animate timeline blocks when enter the viewport
+		$(window).on('scroll', function(){
+			$timeline_block.each(function(){
+				if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+					$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+				}
+			});
+		});
+	});
+</script>
 
 <?php get_footer(); ?> 

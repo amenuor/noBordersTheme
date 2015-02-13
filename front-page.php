@@ -273,7 +273,7 @@ the_post_thumbnail('medium');
 </div>
 </div>
 
-<script>
+<script type="text/javascript">
 	
 if(jQuery('#departureBoard').is(':visible'))
 {
