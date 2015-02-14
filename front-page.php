@@ -296,22 +296,22 @@ if(jQuery('#departureBoard').is(':visible'))
 	updateBoard();			
 }else
 {
-	var boardForSmall = new DepartureBoard (document.getElementById ('departureBoardForSmall'), { rowCount: 5, letterCount: 16 }); 
+	var boardForSmall = new DepartureBoard (document.getElementById ('departureBoardForSmall'), { rowCount: 5, letterCount: 14 }); 
 	
 	setInterval(updateBoardForSmall, 24000);	
 	function updateBoardForSmall()
 	{
-		boardForSmall.setValue (['  <?php _e('The Railroad', 'noborders') ?>  ', 
-		 				         '    <?php _e('Diaries', 'noborders') ?>     ',
-		 				         '   <?php _e('Samarkand', 'noborders') ?>    ',
-		 				         '<?php _e('3  days', 'noborders') ?>         ',
-						         '<?php _e('52 steps', 'noborders') ?>        ']);
+		boardForSmall.setValue ([' <?php _e('The Railroad', 'noborders') ?> ', 
+		 				         '   <?php _e('Diaries', 'noborders') ?>    ',
+		 				         '  <?php _e('Samarkand', 'noborders') ?>   ',
+		 				         '<?php _e('3  days', 'noborders') ?>       ',
+						         '<?php _e('52 steps', 'noborders') ?>      ']);
 		setTimeout(function(){
-			boardForSmall.setValue (['  <?php _e('The Railroad', 'noborders') ?>  ', 
-		 				         '    <?php _e('Diaries', 'noborders') ?>     ',
-		 				         '   <?php _e('Samarkand', 'noborders') ?>    ',
-		 					     '<?php _e('5  articles', 'noborders') ?>     ',
-		 					     '<?php _e('12 blog posts', 'noborders') ?>   ']);
+			boardForSmall.setValue ([' <?php _e('The Railroad', 'noborders') ?> ', 
+		 				         '   <?php _e('Diaries', 'noborders') ?>    ',
+		 				         '  <?php _e('Samarkand', 'noborders') ?>   ',
+		 					     '<?php _e('5  articles', 'noborders') ?>   ',
+		 					     '<?php _e('12 blog posts', 'noborders') ?> ']);
 		}, 12000)
 	}
 	updateBoardForSmall();			
