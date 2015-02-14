@@ -9,33 +9,34 @@ get_header();
 
 ?> 
 <?php get_sidebar('left'); ?> 
-				<div class="col-md content-area" id="main-column">
-					<main id="main" class="site-main" role="main">
-						<?php 
-						while (have_posts()) {
-							the_post();
+				<div class="large-12 columns">
+					<?php 
+					while (have_posts()) {
+						the_post();
 
-							get_template_part('content', get_post_format());
+						get_template_part('content', get_post_format());
 
-							echo "\n\n";
-							
-							NoBordersPagination();
+						echo "\n\n";
+						
+						NoBordersPagination();
 
-							echo "\n\n";
-							
-							// If comments are open or we have at least one comment, load up the comment template
-							if (comments_open() || '0' != get_comments_number()) {
-								comments_template();
-							}
+						echo "\n\n";
+						
+						// If comments are open or we have at least one comment, load up the comment template
+						if (comments_open() || '0' != get_comments_number()) {
+							comments_template();
+						}
 
-							echo "\n\n";
+						echo "\n\n";
 
-						} //endwhile;
-						?> 
-					</main>
+					} //endwhile;
+					?> 
 				</div>
 			    <?php
-			    if ( function_exists( 'sharing_display' ) ) {
+				
+				/*get_sidebar('right');*/
+			    
+				if ( function_exists( 'sharing_display' ) ) {
 			        sharing_display( '', true );
 			    }
  
@@ -43,10 +44,11 @@ get_header();
 			        $custom_likes = new Jetpack_Likes;
 			        echo $custom_likes->post_likes( '' );
 			    }
+			    
 			    if ( function_exists( 'comment_form' ) ) {
 					comment_form();
 				}
-			    ?> 
 				
-<?php get_sidebar('right'); ?> 
+				?> 
+				
 <?php get_footer(); ?> 

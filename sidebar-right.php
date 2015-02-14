@@ -1,6 +1,18 @@
-<?php if (is_active_sidebar('sidebar-right')) { ?> 
-				<div class="col-md-3" id="sidebar-right">
-					<?php do_action('before_sidebar'); ?> 
-					<?php dynamic_sidebar('sidebar-right'); ?> 
-				</div>
-<?php } ?> 
+   <!-- Sidebar -->
+    <aside class="large-3 columns">
+      <h5>Categories</h5>
+      <ul class="side-nav">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Fun</a></li>
+        <li><a href="#">Weasels</a></li>
+      </ul>
+ 
+      <div class="panel">
+        <h5>Featured</h5>
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+        <a href="#">Read More &rarr;</a>
+      </div>
+    </aside>
+    <!-- End Sidebar -->

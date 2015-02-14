@@ -57,6 +57,7 @@ get_header();
           </article>
      
         </div>
+
    <!-- Sidebar -->
     <aside class="large-3 columns">
       <h5>Categories</h5>
