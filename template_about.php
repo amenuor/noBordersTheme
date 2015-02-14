@@ -104,20 +104,19 @@ get_header();
 			</div>
 	  </div>
   </div>
+
+ <?php
+ if ( function_exists( 'sharing_display' ) ) {
+     sharing_display( '', true );
+ }
+ 
+ if ( class_exists( 'Jetpack_Likes' ) ) {
+     $custom_likes = new Jetpack_Likes;
+     echo $custom_likes->post_likes( '' );
+ }
+ ?> 
  
   </div>
- 
- <?php
-echo "\n\n";
-
-// If comments are open or we have at least one comment, load up the comment template
-if (comments_open() || '0' != get_comments_number()) {
-	comments_template();
-}
-
-echo "\n\n";
- 	
- ?>
  
   <!-- End Grid Section -->
   <?php get_footer(); ?> 
