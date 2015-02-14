@@ -114,7 +114,12 @@ get_header();
      $custom_likes = new Jetpack_Likes;
      echo $custom_likes->post_likes( '' );
  }
+
+ if ( function_exists( 'comment_form' ) ) {
+	comment_form();
+ }
  ?> 
+ 
  
   </div>
  
