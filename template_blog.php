@@ -60,19 +60,42 @@ get_header();
 
    <!-- Sidebar -->
     <aside class="large-3 columns">
-      <h5>Categories</h5>
+      <h5>Blog Topics</h5>
       <ul class="side-nav">
-        <li><a href="#">News</a></li>
-        <li><a href="#">Code</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Fun</a></li>
-        <li><a href="#">Weasels</a></li>
+		  <?php
+		  $args = array(
+		    'orderby' => 'name',
+		    'order' => 'ASC',
+		    'parent' => 9
+		    );
+		  $categories = get_categories($args);
+		  foreach($categories as $category) { 
+		      echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></li>';  } 		  ?>
       </ul>
  
-      <div class="panel">
-        <h5>Featured</h5>
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-        <a href="#">Read More &rarr;</a>
+      <div class="panel text-center">
+        <h5>Random Post</h5>
+		<p>
+		<?php
+			query_posts(array(
+				'showposts' => 1,
+				'orderby' => 'rand',
+			));
+		while (have_posts()) : the_post(); ?>
+
+			<?php 
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+				the_post_thumbnail('thumbnail');
+			} 
+			?>
+			<h4><?php the_title(); ?></h4>
+			<hr>
+			<div class="text-left">
+			<?php the_excerpt(); ?>
+			</div>
+		<?php endwhile; ?>
+	    </p>
+		
       </div>
     </aside>
     <!-- End Sidebar -->

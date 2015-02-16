@@ -179,6 +179,13 @@ function NoBordersExcerptMore($more) {
 	'</a>';
 }
 
+add_filter( 'the_content_more_link', 'NoBordersReadMoreLink' );
+	function NoBordersReadMoreLink() {
+	return ' <a class="button radius right" href="'. get_permalink($post->ID) . '">' .
+		__("Read More", "noborders") .
+	'</a>';
+}
+
 function NoBordersExcerptLength( $length ) {
 	return 30;
 }
