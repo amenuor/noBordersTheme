@@ -27,7 +27,7 @@ foreach($categories as $category):
 <div class="large-12 columns text-center panel">
 <a id="<?php echo $category->category_nicename; ?>"><h1><?php echo $category->name; ?></h1></a>
 				<div class="gallery">
-					<ul id="carousel_<?php echo $category->name; ?>" class="elastislide-list">
+					<ul id="carousel_<?php echo $category->category_nicename; ?>" class="elastislide-list">
 						
 						<?php
 							$argsPosts = array(
@@ -49,8 +49,8 @@ foreach($categories as $category):
 					</ul>
 					
 					<div class="image-preview">
-						<img id="preview_<?php echo $category->name; ?>" src="" />
-						<div id="caption_<?php echo $category->name; ?>" class="es_caption">
+						<img id="preview_<?php echo $category->category_nicename; ?>" src="" />
+						<div id="caption_<?php echo $category->category_nicename; ?>" class="es_caption">
 							TEST
 						</div>
 					</div>
@@ -60,7 +60,7 @@ foreach($categories as $category):
 				
 		<script type="text/javascript">
 		jQuery(document).ready(function(){
-			initCarousel('<?php echo $category->name; ?>');
+			initCarousel('<?php echo $category->category_nicename; ?>');
 		});
 		</script>
 
