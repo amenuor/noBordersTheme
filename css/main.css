@@ -331,3 +331,9 @@ section.active {
 p.title {
 	border-bottom: 1px solid #cccccc !important;
 }          
+
+/* Comments */
+.comment {
+	list-style: none;
+	margin: 0;
+}

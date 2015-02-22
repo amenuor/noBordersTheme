@@ -46,6 +46,15 @@ get_header();
 			    }
 			    
 			    if ( function_exists( 'comment_form' ) ) {
+					wp_list_comments( array(
+					        'walker' => new NoBordersWalkerComment,
+					        'style' => 'ul',
+					        'callback' => null,
+					        'end-callback' => null,
+					        'type' => 'all',
+					        'page' => null,
+					        'avatar_size' => 32
+					    ) );
 					comment_form();
 				}
 				

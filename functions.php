@@ -168,7 +168,7 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Custom dropdown menu and navbar in walker class
  */ 
-require get_template_directory() . '/inc/NoBordersWalkerNavMenu.php';
+require get_template_directory() . '/inc/NoBordersWalkers.php';
 
 // Replaces the excerpt "more" text by a link
 add_filter('excerpt_more', 'NoBordersExcerptMore');
