@@ -39,7 +39,8 @@ if (!class_exists('NoBordersWalkerComment')) {
 	     * Starts the list before the CHILD elements are added. */
 	    function start_lvl( &$output, $depth = 0, $args = array() ) {       
 	        $GLOBALS['comment_depth'] = $depth + 1; ?>
- 
+
+					<div class="indented">
 	                <!-- <ul class="children"> -->
 	    <?php }
  
@@ -47,7 +48,8 @@ if (!class_exists('NoBordersWalkerComment')) {
 	     * Ends the children list of after the elements are added. */
 	    function end_lvl( &$output, $depth = 0, $args = array() ) {
 	        $GLOBALS['comment_depth'] = $depth + 1; ?>
- 
+			
+					</div>
 	        <!-- </ul> --> <!-- /.children -->
          
 	    <?php }
@@ -58,43 +60,42 @@ if (!class_exists('NoBordersWalkerComment')) {
 	        $GLOBALS['comment_depth'] = $depth;
 	        $GLOBALS['comment'] = $comment; 
 	        $parent_class = ( empty( $args['has_children'] ) ? '' : 'parent' ); ?>
-         
-	        <li <?php comment_class( $parent_class ); ?> id="comment-<?php comment_ID() ?>">
-	            <div id="comment-body-<?php comment_ID() ?>" class="comment-body">
-             
-	                <div class="comment-author vcard author">
+
+			<!-- COMMENT -->
+			<div class="comment">
+				<section class="top">
+					<h6 class="byline">
 	                    <?php echo ( $args['avatar_size'] != 0 ? get_avatar( $comment, $args['avatar_size'] ) :'' ); ?>
-	                    <cite class="fn n author-name"><?php echo get_comment_author_link(); ?></cite>
-	                </div><!-- /.comment-author -->
+	                    <?php echo get_comment_author_link(); ?>
+						<small> 
+							<span class="data">
+<a href="<?php echo htmlspecialchars( get_comment_link( get_comment_ID() ) ) ?>"><?php comment_date(); ?> at <?php comment_time(); ?></a> <?php edit_comment_link( '(Edit)' ); ?>
+							</span>
+						</small>
+					</h6>
+				</section>
+				<section class="content">
+                    <?php if( !$comment->comment_approved ) : ?>
+                    <em class="comment-awaiting-moderation">Your comment is awaiting moderation.</em>
+                 
+                    <?php else: comment_text(); ?>
+                    <?php endif; ?>
+						
+				</section> 
+                <div class="reply">
+                    <?php $reply_args = array(
+                        'add_below' => $add_below, 
+                        'depth' => $depth,
+                        'max_depth' => $args['max_depth'] );
  
-	                <div id="comment-content-<?php comment_ID(); ?>" class="comment-content">
-	                    <?php if( !$comment->comment_approved ) : ?>
-	                    <em class="comment-awaiting-moderation">Your comment is awaiting moderation.</em>
-                     
-	                    <?php else: comment_text(); ?>
-	                    <?php endif; ?>
-	                </div><!-- /.comment-content -->
- 
-	                <div class="comment-meta comment-meta-data">
-	                    <a href="<?php echo htmlspecialchars( get_comment_link( get_comment_ID() ) ) ?>"><?php comment_date(); ?> at <?php comment_time(); ?></a> <?php edit_comment_link( '(Edit)' ); ?>
-	                </div><!-- /.comment-meta -->
- 
-	                <div class="reply">
-	                    <?php $reply_args = array(
-	                        'add_below' => $add_below, 
-	                        'depth' => $depth,
-	                        'max_depth' => $args['max_depth'] );
-     
-	                    comment_reply_link( array_merge( $args, $reply_args ) );  ?>
-	                </div><!-- /.reply -->
-	            </div><!-- /.comment-body -->
+                    comment_reply_link( array_merge( $args, $reply_args ) );  ?>
+                </div><!-- /.reply -->
+			</div>
  
 	    <?php }
  
 	    function end_el(&$output, $comment, $depth = 0, $args = array() ) { ?>
-         
-	        </li><!-- /#comment-' . get_comment_ID() . ' -->
-         
+                  
 	    <?php }
      
 	    /** DESTRUCTOR

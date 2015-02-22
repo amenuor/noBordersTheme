@@ -334,6 +334,30 @@ p.title {
 
 /* Comments */
 .comment {
+    padding-top: 15px;
 	list-style: none;
 	margin: 0;
 }
+
+h6.byline {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+h6.byline .data {
+  font-weight: 400;
+}
+h6.byline .label {
+  font-size: 60%;
+}
+
+.indented {
+  padding-left: 15px;
+  border-left: 1px solid #ebebeb;
+  padding-top: 0px !important;
+}
+
+.bullets {
+  margin-left: 30px;
+}
+              
