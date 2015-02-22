@@ -96,5 +96,5 @@ get_header();
 						<?php } //endif; ?> 
 					</main>
 				</div>
-<?php get_sidebar('right'); ?> 
+
 <?php get_footer(); ?> 

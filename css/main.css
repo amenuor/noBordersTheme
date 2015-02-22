@@ -367,4 +367,11 @@ h6 img
 .bullets {
   margin-left: 30px;
 }
+
+/* Blog */
+.blogpostcontent img
+{
+	float: left; 
+	padding: 5px;
+}
               
