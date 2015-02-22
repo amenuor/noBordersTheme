@@ -20,10 +20,10 @@ $args = array(
 		
 $latest = new WP_Query( $args );
 while( $latest->have_posts() ) : $latest->the_post(); ?>
-		<article>
+		<article class="clearfix">
 			<h3><?php the_title(); ?></h3>
 			<h6 class="left subheader">Written by <?php the_author(); ?> on <?php the_time('jS M, Y') ?></h6>
-			<hr>
+			<hr>	
 			
 			<div class="blogpostcontent text-justify">
 				<?php 
