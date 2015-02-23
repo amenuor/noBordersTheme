@@ -128,18 +128,18 @@ if (!function_exists('NoBordersEnqueueScripts')) {
 	function NoBordersEnqueueScripts() 
 	{
 		wp_enqueue_style('normalize', get_template_directory_uri() . '/css/foundation5/normalize.css');
-		wp_enqueue_style('main-style', get_template_directory_uri() . '/css/main.css');
+		wp_enqueue_style('main-style', get_template_directory_uri() . '/css/main.css?v=' . time());
 		wp_enqueue_style('foundation', get_template_directory_uri() . '/css/foundation5/foundation.css');
 		wp_enqueue_style('departure-board-css', get_template_directory_uri() . '/css/departure-board.css');
 		wp_enqueue_style('noborders-style', get_stylesheet_uri());
 		wp_enqueue_style('elslidecustom', get_template_directory_uri() . '/css/elastslide/custom.css');
 		wp_enqueue_style('elslide-style', get_template_directory_uri() . '/css/elastslide/elastislide.css');
-		wp_enqueue_style('timeline-style', get_template_directory_uri() . '/css/timeline.css');
+		wp_enqueue_style('timeline-style', get_template_directory_uri() . '/css/timeline.css?v=' . time());
 		wp_enqueue_style('foundationicons', 'http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css');
 
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('gmap', 'https://maps.googleapis.com/maps/api/js?&sensor=false');
-		wp_enqueue_script('noborders', get_template_directory_uri() . '/js/noborders.js');
+		wp_enqueue_script('noborders', get_template_directory_uri() . '/js/noborders.js?v=' . time());
 		wp_enqueue_script('modernizr-script', get_template_directory_uri() . '/js/vendor/modernizr.min.js');
 		wp_enqueue_script('html5-shiv-script', get_template_directory_uri() . '/js/vendor/html5shiv.js');
 		wp_enqueue_script('fastclick', get_template_directory_uri() . '/js/vendor/fastclick.js');

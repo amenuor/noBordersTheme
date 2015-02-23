@@ -103,13 +103,7 @@ Main components
 }
 .cd-timeline-img img {
   display: block;
-  width: 24px;
-  height: 24px;
   position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
   background: #d14836;

@@ -259,8 +259,8 @@ the_post_thumbnail('medium');
 <?php _e("Blog", "noborders"); ?>
 </p>
 <p>
-<img src="<?php echo get_template_directory_uri();?>/img/music.png" width="24px" /> 
-<?php _e("Music", "noborders"); ?>
+<img src="<?php echo get_template_directory_uri();?>/img/audio.png" width="24px" /> 
+<?php _e("Audio", "noborders"); ?>
 </p>
 <p>
 <img src="<?php echo get_template_directory_uri();?>/img/articles.png" width="24px" /> 
