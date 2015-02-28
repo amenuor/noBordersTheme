@@ -212,7 +212,7 @@
 		// 3000ms by default
 		delayTime: 3000,
 		// click item callback
-		onClick : function( el, position, evt ) { alert('original'); },
+		onClick : function( el, position, evt ) { },
 		onReady : function() { return false; },
 		onBeforeSlide : function() { return false; },
 		onAfterSlide : function() { return false; }

@@ -48,7 +48,7 @@ $big = 999999999;
 	</div>
 	
    <!-- Sidebar -->
-   <?php get_sidebar('right'); ?> 
+   <?php get_sidebar('blog'); ?> 
 
     <!-- End Sidebar -->
   </div>

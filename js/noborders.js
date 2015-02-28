@@ -3,7 +3,7 @@ google.maps.event.addDomListener(window, 'load', initMap);
 
 function addAMarkerToMap(map, marker)
 {
-    // Let's also add a marker while we're at it
+	//Create a Marker object
     var gmarker = new google.maps.Marker({
         position: marker.latLng,
         map: map,
@@ -11,10 +11,12 @@ function addAMarkerToMap(map, marker)
 		icon: marker.icon
     });
 	
+	//Create a popup InfoWindow
 	var infowindow = new google.maps.InfoWindow({
 		content: marker.popupContent
 	});
-	  
+	
+	//Attach the popup to the marker  
 	google.maps.event.addListener(gmarker, 'click', function() {
 	      infowindow.open(map,gmarker);
     });

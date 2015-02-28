@@ -8,7 +8,6 @@
 get_header();
 
 ?> 
-<?php get_sidebar('left'); ?> 
 				<div class="col-md content-area" id="main-column">
 					<main id="main" class="site-main" role="main">
 						<?php if (have_posts()) { ?> 
@@ -34,5 +33,4 @@ get_header();
 						<?php } // endif; ?> 
 					</main>
 				</div>
-<?php get_sidebar('right'); ?> 
 <?php get_footer(); ?> 

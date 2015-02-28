@@ -6,26 +6,24 @@
  * @package noborders
  */
 
-$catId = $_GET["c"];
-if($catId != 6 && $catId != 5)
-{
-	wp_redirect( home_url());
-	exit();
-}
-
 get_header();
 
+?>
+
+<div class="row">
+<div class="large-9 columns text-center">
+
+<?php
 $args = array(
   'orderby' => 'name',
   'order' => 'ASC',
-  'parent' => htmlspecialchars($_GET["c"]) 
+  'parent' => 6 
   );
 $categories = get_categories($args);
 foreach($categories as $category):
 ?>
-<div class="row">
-<div class="large-12 columns text-center panel">
-<a id="<?php echo $category->category_nicename; ?>"><h1><?php echo $category->name; ?></h1></a>
+
+<a id="<?php echo $category->category_nicename; ?>"><h1><?php echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a>';; ?></h1></a>
 				<div class="gallery">
 					<ul id="carousel_<?php echo $category->category_nicename; ?>" class="elastislide-list">
 						
@@ -41,63 +39,24 @@ foreach($categories as $category):
 									$orig = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'original' );
 									$urlOrig = $orig['0'];
 									?>
-									<li data-permalink="<?php the_permalink(); ?>" data-title="<?php the_title(); ?>" data-preview="<?php echo $urlOrig;?>"><a href="#_"><img width="100px" src="<?php echo $urlThumb;?>" /></a></li>
+									<li data-title="<?php the_title(); ?>" data-preview="<?php echo $urlOrig;?>"><a href="<?php the_permalink(); ?>"><img width="100px" src="<?php echo $urlThumb;?>" /></a></li>
 								
 									</li>
 								<?php endif;?>
 							<?php endwhile; ?>
-					</ul>
-					
-					<div class="image-preview">
-						<img id="preview_<?php echo $category->category_nicename; ?>" src="" />
-						<div id="caption_<?php echo $category->category_nicename; ?>" class="es_caption">
-							TEST
-						</div>
-					</div>
+					</ul>					
 				</div>
-			</div>
-		</div>
 				
 		<script type="text/javascript">
-		jQuery(document).ready(function(){
-			initCarousel('<?php echo $category->category_nicename; ?>');
-		});
+			jQuery('#carousel_<?php echo $category->category_nicename; ?>').elastislide();
 		</script>
 
 <?php endforeach; ?>
 
-		<script type="text/javascript">
-			function initCarousel(postId)
-			{
-				var current = 0,
-					$preview = jQuery( '#preview_' + postId ),
-					$carouselEl = jQuery( '#carousel_' + postId ),
-					$thisCaption = jQuery( '#caption_' + postId ),
-					$carouselItems = $carouselEl.children(),
-					carousel = $carouselEl.elastislide( {
-						current : current,
-						minItems : 4,
-						onClick : function( el, pos, evt ) {
+			</div>
+			<!-- Sidebar -->
+		    <?php get_sidebar('carousel'); ?> 
 
-							changeImage( el, pos );
-							evt.preventDefault();
+		</div>		
 
-						},
-						onReady : function() {
-
-							changeImage( $carouselItems.eq( current ), current );
-						
-						}
-					} );
-
-				function changeImage( el, pos ) {
-
-					$preview.attr( 'src', el.data( 'preview' ) );
-					$carouselItems.removeClass( 'current-img' );
-					el.addClass( 'current-img' );
-					$thisCaption.html('<a href="'+ el.data( 'permalink' ) +'" rel="bookmark">'+el.data( 'title' )+'</a>');
-				}
-			}
-			
-		</script>
 <?php get_footer(); ?> 

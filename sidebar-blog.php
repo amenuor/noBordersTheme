@@ -1,6 +1,6 @@
    <!-- Sidebar -->
     <aside class="large-3 columns">
-      <h5>Blog Topics</h5>
+      <h5><?php _e('Blog Topics', 'noborders');?></h5>
       <ul class="side-nav">
 		  <?php
 		  $args = array(
@@ -14,7 +14,7 @@
       </ul>
  
       <div class="panel text-center">
-        <h5>Random Post</h5>
+      <h5><?php _e('Random Post', 'noborders');?></h5>
 		<p>
 		<?php
 			query_posts(array(
