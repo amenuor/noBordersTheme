@@ -21,86 +21,77 @@ get_header();
     </div>
   </div>
   
-  <?php
-  	$eleDesc = 'Eleonora Vio llentesque non risus neque. Aliquam a fermentum ipsum, id malesuada diam. Morbi tincidunt at dui a placerat. Sed elit libero, tincidunt at posuere ac, congue et nisi. Praesent efficitur lobortis leo, ut lobortis mi semper quis. Suspendisse quis ante id quam aliquam volutpat. Vestibulum vulputate viverra arcu. Etiam mollis metus dolor, quis bibendum nunc tincidunt sed. Vivamus nec odio in diam tempus euismod varius a nunc. Pellentesque in volutpat purus. Praesent ullamcorper, nulla sit amet gravida ullamcorper, magna massa tempor nibh, a volutpat tellus nunc sed libero. In id felis sit amet ligula tincidunt consequat et ac dolor. Sed eros lacus, dapibus';
-  	$eleDesc = 'Eleonora Vio llentesque non risus neque. Aliquam a fermentum ipsum, id malesuada diam. Morbi tincidunt at dui a placerat. Sed elit libero, tincidunt at posuere ac, congue et nisi. Praesent efficitur lobortis leo, ut lobortis mi semper quis. Suspendisse quis ante id quam aliquam volutpat. Vestibulum vulputate viverra arcu. Etiam mollis metus dolor, quis bibendum nunc tincidunt sed. Vivamus nec odio in diam tempus euismod varius a nunc. Pellentesque in volutpat purus. Praesent ullamcorper, nulla sit amet gravida ullamcorper, magna massa tempor nibh, a volutpat tellus nunc sed libero. In id felis sit amet ligula tincidunt consequat et ac dolor. Sed eros lacus, dapibus';
-  	$costanzaDesc = 'Costanza Spocci llentesque non risus neque. Aliquam a fermentum ipsum, id malesuada diam. Morbi tincidunt at dui a placerat. Sed elit libero, tincidunt at posuere ac, congue et nisi. Praesent efficitur lobortis leo, ut lobortis mi semper quis. Suspendisse quis ante id quam aliquam volutpat. Vestibulum vulputate viverra arcu. Etiam mollis metus dolor, quis bibendum nunc tincidunt sed. Vivamus nec odio in diam tempus euismod varius a nunc. Pellentesque in volutpat purus. Praesent ullamcorper, nulla sit amet gravida ullamcorper, magna massa tempor nibh, a volutpat tellus nunc sed libero. In id felis sit amet ligula tincidunt consequat et ac dolor. Sed eros lacus, dapibus';
-  	$giuDesc = 'Giulia Bertoluzzi llentesque non risus neque. Aliquam a fermentum ipsum, id malesuada diam. Morbi tincidunt at dui a placerat. Sed elit libero, tincidunt at posuere ac, congue et nisi. Praesent efficitur lobortis leo, ut lobortis mi semper quis. Suspendisse quis ante id quam aliquam volutpat. Vestibulum vulputate viverra arcu. Etiam mollis metus dolor, quis bibendum nunc tincidunt sed. Vivamus nec odio in diam tempus euismod varius a nunc. Pellentesque in volutpat purus. Praesent ullamcorper, nulla sit amet gravida ullamcorper, magna massa tempor nibh, a volutpat tellus nunc sed libero. In id felis sit amet ligula tincidunt consequat et ac dolor. Sed eros lacus, dapibus';
-  	$tanDesc = 'Tanja Jovetic llentesque non risus neque. Aliquam a fermentum ipsum, id malesuada diam. Morbi tincidunt at dui a placerat. Sed elit libero, tincidunt at posuere ac, congue et nisi. Praesent efficitur lobortis leo, ut lobortis mi semper quis. Suspendisse quis ante id quam aliquam volutpat. Vestibulum vulputate viverra arcu. Etiam mollis metus dolor, quis bibendum nunc tincidunt sed. Vivamus nec odio in diam tempus euismod varius a nunc. Pellentesque in volutpat purus. Praesent ullamcorper, nulla sit amet gravida ullamcorper, magna massa tempor nibh, a volutpat tellus nunc sed libero. In id felis sit amet ligula tincidunt consequat et ac dolor. Sed eros lacus, dapibus';
-  ?>
-
   <div class="row show-for-small-only">
+  
+  
+  <?php
+  	$eleDesc = '';
+  	$costanzaDesc = '';
+  	$giuDesc = '';
+  	$tanDesc = '';
+	
+	$args = array(
+	'posts_per_page' => 4,
+	'paged' => $paged,
+	'cat' => 133
+	);	
+	
+	$latest = new WP_Query( $args );
+	while( $latest->have_posts() ) : $latest->the_post(); ?>
+
 	  <div class="medium-3 columns">
 		  <div class="panel text-center">
-		  	Eleonora Vio<br/>
-		  	<img src="http://placehold.it/100x75">
-		    <p class="text-justify"><?php _e($eleDesc, 'noborders')?></p>
+		  	<?php the_title(); ?><br/>
+			<?php 
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+				the_post_thumbnail('small');
+			} 
+			?>
+		    <p class="text-justify"><?php the_content(); ?></p>
 		  </div>
 	  </div>
-	  <div class="medium-3 columns">
-		  <div class="panel text-center">
-		  	Costanza Spocci<br/>
-		  	<img src="http://placehold.it/100x75">
-		    <p class="text-justify"><?php _e($costanzaDesc, 'noborders')?></p>
-		  </div>
-	  </div>
-	  <div class="medium-3 columns">
-		  <div class="panel text-center">
-		  	Giulia Bertoluzzi<br/>
-		  	<img src="http://placehold.it/100x75">
-		    <p class="text-justify"><?php _e($giuDesc, 'noborders')?></p>
-		  </div>
-	  </div>
-	  <div class="medium-3 columns">
-		  <div class="panel text-center">
-		  	Tanja Jovetic<br/>
-		  	<img src="http://placehold.it/100x75">
-		    <p class="text-justify"><?php _e($tanDesc, 'noborders')?></p>
-		  </div>
-	  </div>	  
+	  
+<?php endwhile; 
+	$latest->rewind_posts(); ?>
+
   </div>
 
   <div class="row show-for-medium-up">
 	  <div class="large-12 columns">
 			<ul class="tabs" data-tab>
-			  <li class="tab-title active"><a href="#panel1">		  
-			  <div class="panel text-center">
-			  	Eleonora Vio<br/>
-			  	<img src="http://placehold.it/100x75">
+			
+			<?php
+				$i = 1;
+				while( $latest->have_posts() ) : $latest->the_post();
+			?>
+			
+			  <li class="tab-title <?php echo $i == 1 ? 'active' : '';?>"><a href="#panel<?php echo $i;?>">		  
+			  <div class="panel text-center"><?php $i += 1; the_title();?><br/>
+				<?php 
+					$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+				?>
+				<img style="height:100px" src="<?php echo $url;?>">
 			  </div>
 		  	  </a></li>
-			  <li class="tab-title"><a href="#panel2">
-			  <div class="panel text-center">
-			  	Costanza Spocci<br/>
-			  	<img src="http://placehold.it/100x75">
-			  </div>
-			  </a></li>
-			  <li class="tab-title"><a href="#panel3">
-			  <div class="panel text-center">
-			  	Giulia Bertoluzzi<br/>
-			  	<img src="http://placehold.it/100x75">
-			  </div>
-			  </a></li>
-			  <li class="tab-title"><a href="#panel4">
-			  <div class="panel text-center">
-			  	Tanja Jovetic<br/>
-			  	<img src="http://placehold.it/100x75">
-			  </div>
-			  </a></li>
+
+<?php endwhile; 
+	$latest->rewind_posts(); ?>
+
+
 			</ul>
 			<div class="tabs-content">
-			  <div class="content active" id="panel1">
-			    <p><?php _e($eleDesc, 'noborders')?></p>
+
+			<?php
+				$i = 1;
+				while( $latest->have_posts() ) : $latest->the_post();
+			?>
+
+			  <div class="content <?php echo $i == 1 ? 'active' : '';?>" id="panel<?php echo $i;?>">
+			    <p><?php the_content(); $i += 1; ?></p>
 			  </div>
-			  <div class="content" id="panel2">
-			    <p><?php _e($costanzaDesc, 'noborders')?></p>
-			  </div>
-			  <div class="content" id="panel3">
-			    <p><?php _e($giuDesc, 'noborders')?></p>
-			  </div>
-			  <div class="content" id="panel4">
-			    <p><?php _e($tanDesc, 'noborders')?></p>
-			  </div>
+
+<?php endwhile; ?>
+			  
 			</div>
 	  </div>
   </div>
