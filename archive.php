@@ -8,11 +8,16 @@
 get_header(); 
 
 ?> 
-<?php get_sidebar('left'); ?> 
-				<div class="col-md content-area" id="main-column">
-					<main id="main" class="site-main" role="main">
-						<?php if (have_posts()) { ?> 
 
+<style>
+.masonry-brick { width: 220px; margin: 10px; float: left;  }
+#masonryContainer { width: 0 auto; }              
+            
+</style>
+
+<!-- Masonry Container -->
+<?php if (have_posts()) { ?> 
+	
 						<header class="page-header">
 							<h1 class="page-title">
 								<?php
@@ -63,8 +68,7 @@ get_header();
 
 								endif;
 								?> 
-							</h1>
-							
+							</h1>							
 							<?php
 							// Show an optional term description.
 							$term_description = term_description();
@@ -73,28 +77,44 @@ get_header();
 							} //endif;
 							?>
 						</header><!-- .page-header -->
+						<div class="row">
+						  <div class="large-12 columns">
+						    <div id="masonryContainer">
 						
 						<?php 
 						/* Start the Loop */
-						while (have_posts()) {
-							the_post();
+						while (have_posts()): the_post(); 
 
-							/* Include the Post-Format-specific template for the content.
-							 * If you want to override this in a child theme, then include a file
-							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-							 */
-							get_template_part('content', get_post_format());
-						} //endwhile; 
+						$mediumImgUrl = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+
+						?>
+						
+				        <div class="masonry-brick panel">
+							
+							<a href="<?php the_permalink(); ?>"><img src="<?php echo $mediumImgUrl['0']; ?>"></a>
+							<div class="orbit-caption">
+								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							</div>
+						
+				        </div>
+						
+						<?php
+						endwhile; 
 						?> 
 
-						<?php NoBordersPagination(); ?> 
-
-						<?php } else { ?> 
-
-						<?php get_template_part('no-results', 'archive'); ?> 
+						    </div>
+						  </div>
+						</div>
 
 						<?php } //endif; ?> 
-					</main>
-				</div>
+
+<script>
+jQuery(window).load(function(){
+  jQuery('#masonryContainer').masonry({  
+    itemSelector: '.masonry-brick',
+    columnWidth: 240
+  });  
+});
+</script>
 
 <?php get_footer(); ?> 

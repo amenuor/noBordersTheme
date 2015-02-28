@@ -31,10 +31,10 @@ get_header();
             <section class="section">
               <div class="content" data-slug="panel2">
                 <ul class="large-block-grid-5">
-                  <li><a href="mailto:giulia@nawartpress.com"><img src="http://placehold.it/200x200&text=[person]">Giulia Bertoluzzi</a></li>
-                  <li><a href="mailto:costanza@nawartpress.com"><img src="http://placehold.it/200x200&text=[person]">Costanza Spocci</a></li>
-                  <li><a href="mailto:eleonora@nawartpress.com"><img src="http://placehold.it/200x200&text=[person]">Eleonora Vio</a></li>
-                  <li><a href="mailto:tanja@nawartpress.com"><img src="http://placehold.it/200x200&text=[person]">Tanja Jovetic</a></li>
+                  <li><a href="mailto:giulia.bertoluzzi@nawartpress.com"><img src="http://placehold.it/200x200&text=[person]">Giulia Bertoluzzi</a></li>
+                  <li><a href="mailto:costanza.spocci@nawartpress.com"><img src="http://placehold.it/200x200&text=[person]">Costanza Spocci</a></li>
+                  <li><a href="mailto:eleonora.vio@nawartpress.com"><img src="http://placehold.it/200x200&text=[person]">Eleonora Vio</a></li>
+                  <li><a href="mailto:tanja.jovetic@nawartpress.com"><img src="http://placehold.it/200x200&text=[person]">Tanja Jovetic</a></li>
                 </ul>
               </div>
             </section>

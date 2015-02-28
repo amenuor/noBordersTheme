@@ -147,6 +147,8 @@ if (!function_exists('NoBordersEnqueueScripts')) {
 		wp_enqueue_script('foundation', get_template_directory_uri() . '/js/foundation.min.js', array('jquery')); 		wp_enqueue_script('departure-board', get_template_directory_uri() . '/js/vendor/departure-board.js');
 		wp_enqueue_script('elslide-ppcustom', get_template_directory_uri() . '/js/vendor/jquerypp.custom.js');
 		wp_enqueue_script('elslide', get_template_directory_uri() . '/js/vendor/jquery.elastislide.js?v=' . time());
+		wp_enqueue_script('masonry', get_template_directory_uri() . '/js/vendor/masonry.pkgd.min.js');
+		
 			
 	}// NoBordersEnqueueScripts
 }
