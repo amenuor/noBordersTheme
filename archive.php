@@ -9,12 +9,6 @@ get_header();
 
 ?> 
 
-<style>
-.masonry-brick { width: 220px; margin: 10px; float: left;  }
-#masonryContainer { width: 0 auto; }              
-            
-</style>
-
 <!-- Masonry Container -->
 <?php if (have_posts()) { ?> 
 	
@@ -32,7 +26,7 @@ get_header();
 									 * what author we're dealing with (if that is the case).
 									 */
 									the_post();
-									printf(__('Author: %s', 'noborders'), '<span class="vcard">' . get_the_author() . '</span>');
+									printf(__('Author: %s', 'noborders'), '<span>' . get_the_author() . '</span>');
 									/* Since we called the_post() above, we need to
 									 * rewind the loop back to the beginning that way
 									 * we can run the loop properly, in full.
@@ -106,9 +100,19 @@ get_header();
 						  </div>
 						</div>
 
-						<?php } //endif; ?> 
+						<?php 
+					
+						/* Blog Navigation */
+						$big = 999999999;
+						echo paginate_links( array(
+						    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+						    'format' => '?paged=%#%',
+						    'current' => max( 1, get_query_var('paged') ),
+						) );					
+					
+					} //endif; ?> 
 
-<script>
+<script type="text/javascript">
 jQuery(window).load(function(){
   jQuery('#masonryContainer').masonry({  
     itemSelector: '.masonry-brick',

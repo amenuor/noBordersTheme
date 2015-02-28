@@ -401,4 +401,9 @@ h6 img
 	float: left; 
 	padding: 5px;
 }
+
+/* Archives */
+.masonry-brick { width: 220px; margin: 10px; float: left;  }
+#masonryContainer { width: 0 auto; }            
+
               

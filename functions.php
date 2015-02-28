@@ -234,3 +234,11 @@ function jptweak_remove_share() {
     }
 }
 add_action( 'loop_start', 'jptweak_remove_share' );
+
+function no_nopaging($query) {
+if (is_archive()) {
+$query->set('nopaging', 1);
+}
+}
+
+add_action('parse_query', 'no_nopaging');

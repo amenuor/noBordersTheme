@@ -280,7 +280,7 @@ if (!function_exists('NoBordersPostOn')) {
 				esc_attr(get_the_time()),
 				$time_string
 			),
-			sprintf('<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
+			sprintf('<span class="author"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
 				esc_url(get_author_posts_url(get_the_author_meta('ID'))),
 				esc_attr(sprintf(__('View all posts by %s', 'noborders'), get_the_author())),
 				esc_html(get_the_author())
