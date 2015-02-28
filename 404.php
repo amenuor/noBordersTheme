@@ -1,14 +1,23 @@
 <?php get_header(); ?> 
 
-				<div class="col-md-12 content-area" id="main-column">
-					<main id="main" class="site-main" role="main">
-						<section class="error-404 not-found">
 							<header class="page-header">
-								<h1 class="page-title"><?php _e('Oops! That page can&rsquo;t be found.', 'noborders'); ?></h1>
+								<h1 class="page-title"><?php _e('Not Found.', 'noborders'); ?></h1>
 							</header><!-- .page-header -->
 
 							<div class="page-content">
-								<p><?php _e('It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'noborders'); ?></p>
+								
+							<div class="row">
+							  <div class="large-12 columns">
+							    <div id="masonryContainer">
+
+									<div class="masonry-brick panel">
+								
+									<p><?php _e('Reality is appearance, mistakes are always in wait.'); ?><br/>
+									   <?php _e('This page doesn\'t exist, now, one day it might.');?><br/>
+									   <a href="/"><?php _e('Come back to a safer harbour.', 'noborders');?></a></p>
+									</div>
+									
+									<div class="masonry-brick panel">
 
 								<!--search form-->
 								<form class="form-horizontal" method="get" action="<?php echo esc_url(home_url('/')); ?>" role="form">
@@ -21,14 +30,15 @@
 										</div>
 									</div>
 								</form>
+							</div>
 
-								<div class="row">
-									<div class=" col-sm-6 col-md-3">
-										<?php the_widget('WP_Widget_Recent_Posts'); ?> 
-									</div>
-									<div class=" col-sm-6 col-md-3">
-										<div class="widget widget_categories">
-											<h2 class="widgettitle"><?php _e('Most Used Categories', 'noborders'); ?></h2>
+
+							<div class="masonry-brick panel">
+								<?php the_widget('WP_Widget_Recent_Posts'); ?> 
+							</div>
+
+							<div class="masonry-brick panel">
+											<h2 class="widgettitle"><?php _e('Popular Topics', 'noborders'); ?></h2>
 											<ul>
 												<?php
 												wp_list_categories(array(
@@ -40,22 +50,33 @@
 												));
 												?> 
 											</ul>
-										</div><!-- .widget -->
-									</div>
-									<div class=" col-sm-6 col-md-3">
+							</div>
+							
+							<div class="masonry-brick panel">
 										<?php
 										/* translators: %1$s: smiley */
 										$archive_content = '<p>' . sprintf(__('Try looking in the monthly archives. %1$s', 'noborders'), convert_smilies(':)')) . '</p>';
 										the_widget('WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content");
 										?> 
-									</div>
-									<div class=" col-sm-6 col-md-3">
+							</div>
+							
+							<div class="masonry-brick panel">
 										<?php the_widget('WP_Widget_Tag_Cloud'); ?> 
-									</div>
-								</div>
+							</div>
+							</div>
+							</div>
+							</div>
+
 							</div><!-- .page-content -->
-						</section><!-- .error-404 -->
-					</main>
-				</div>
+							
+							<script type="text/javascript">
+							jQuery(window).load(function(){
+							  jQuery('#masonryContainer').masonry({  
+							    itemSelector: '.masonry-brick',
+							    columnWidth: 240
+							  });  
+							});
+							</script>
+							
 
 <?php get_footer(); ?> 
