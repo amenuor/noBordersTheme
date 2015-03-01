@@ -126,7 +126,7 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
 <div class="large-12 columns">
     
 <div class="panel">
-<h4><?php _e("Get in touch!", "noborders"); ?></h4>
+<h4><?php _e("Support us!", "noborders"); ?></h4>
             
 <div class="row">
 	<div class="large-9 columns">
