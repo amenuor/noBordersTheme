@@ -25,28 +25,31 @@
 		<script type="text/javascript">
 			window.templateURL = '<?php echo get_template_directory_uri();?>';
 			
+			//Initialize the icons
 			var icons = initIcons();
-
+			
+			//Initialize global variables
 			window.railwayDiariesCoordinates = [];
 			window.markers = [];
 			
 			<?php
 			$args = array(
 			'paged' => $paged,
-			'cat' => 8
+			'cat' => 8 //Category for posts that should be on the Google Map
 			);
-				
+			
+			//The Loop
 			$latest = new WP_Query( $args );
 			while( $latest->have_posts() ) {
 				$latest->the_post(); 
-				$mediaType = get_post_meta($post->ID, 'MediaType', true);
+				$mediaType = get_post_meta($post->ID, 'MediaType', true); //Get MediaType Custom Field value
 				if($mediaType == '')
 				{
 					$mediaType = 'BLOG';
 				}
 				$mediaType = strtoupper($mediaType);
 				
-				$latLng = get_post_meta($post->ID, 'LatLng', true);
+				$latLng = get_post_meta($post->ID, 'LatLng', true);  //Get LatLng Custom Field value
 				if($latLng == '')
 				{
 					continue;

@@ -35,7 +35,7 @@ function initMap() {
         center: new google.maps.LatLng(32.6700, 53.9400), // Iran
 
         // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
+        // This is where you would paste any style found on https://snazzymaps.com/ for instance.
         styles: [{"featureType":"landscape","stylers":[{"hue":"#F1FF00"},{"saturation":-27.4},{"lightness":9.4},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#0099FF"},{"saturation":-20},{"lightness":36.4},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#00FF4F"},{"saturation":0},{"lightness":0},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FFB300"},{"saturation":-38},{"lightness":11.2},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#00B6FF"},{"saturation":4.2},{"lightness":-63.4},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#9FFF00"},{"saturation":0},{"lightness":0},{"gamma":1}]}]
     };	
 
@@ -53,6 +53,7 @@ function initMap() {
     	addAMarkerToMap(map, marker);
     });
 	
+	//Adjust zoom level in order to always display all markers
 	var latlngbounds = new google.maps.LatLngBounds();
 	for (var i = 0; i < window.railwayDiariesCoordinates.length; i++) {
 	    latlngbounds.extend(window.railwayDiariesCoordinates[i]);
