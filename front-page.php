@@ -130,10 +130,10 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
             
 <div class="row">
 	<div class="large-9 columns">
-		<p><?php _e("We'd love to hear from you, you attractive person you.", "noborders"); ?></p>
+		<p><?php _e("If you like what we do, consider donate whatever you can to our projects!", "noborders"); ?></p>
 	</div>
 	<div class="large-3 columns">
-		<a href="/contacts" class="radius button right"><?php _e("Contact Us", "noborders"); ?></a>
+		<a href="/contacts" class="radius button right"><?php _e("Support Us", "noborders"); ?></a>
 	</div>
 </div>
 </div>

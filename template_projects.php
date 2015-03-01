@@ -95,15 +95,10 @@ get_header();
 
 <div class="row">
 	<div class="large-12 columns">
-	<p>
+	<p>		
 		<?php
-		_e('ullamcorper, rhoncus magna ac, condimentum lacus. Curabitur vel hendrerit leo, quis posuere sapien. Sed et mauris iaculis, iaculis dui et, ultricies arcu. Vivamus non ligula nisl. Pellentesque viverra tortor vitae felis euismod consequat et ac dolor.
-
-Phasellus consectetur dignissim eleifend. Donec augue massa, facilisis quis efficitur et, accumsan at est. Integer in lobortis leo, nec aliquam est. Maecenas ex augue, convallis imperdiet odio quis, tincidunt condimentum diam. Integer mattis, dolor vel facilisis tempus, sem augue accumsan massa, eget rhoncus nulla sapien vulputate magna. Fusce nisl sem, vestibulum sit amet justo et, interdum semper felis. Donec dapibus purus vitae sem scelerisque, sed hendrerit odio vestibulum.
-
-Phasellus velit velit, tristique in suscipit tempor, lobortis quis arcu. Cras ornare ipsum eros, sit amet pharetra risus accumsan non. Praesent sed sapien mauris. Nullam malesuada malesuada mattis. Fusce ut enim congue, blandit arcu malesuada, euismod lectus. In pellentesque, eros vel pretium blandit, augue lectus ornare tortor, ut fringilla ante ligula at mauris. Nunc tincidunt augue nunc, sit amet vestibulum orci suscipit in.
-
-Suspendisse potenti. Aenean cursus justo rutrum nisl interdum aliquet. Proin non enim a diam molestie dapibus quis eu odio. Aenean quis elit nisl. Mauris vel pellentesque dolor, a sollicitudin felis. Integer posuere nibh id elit semper ullamcorper. Maecenas euismod, neque ac iaculis consequat, neq');
+			$post_731 = get_post(731); 
+			echo apply_filters('the_content', $post_731->post_content);
 		?>
 	</p>
 	</div>
