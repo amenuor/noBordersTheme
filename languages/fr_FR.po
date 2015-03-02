@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NoBorders\n"
-"POT-Creation-Date: 2015-03-02 08:41+0100\n"
-"PO-Revision-Date: 2015-03-02 08:41+0100\n"
+"POT-Creation-Date: 2015-03-02 08:40+0100\n"
+"PO-Revision-Date: 2015-03-02 08:42+0100\n"
 "Last-Translator: \n"
 "Language-Team: YanchWare <contacts@yanchware.com>\n"
-"Language: Italian\n"
+"Language: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,83 +18,83 @@ msgstr ""
 
 #: ../404.php:4
 msgid "Not Found."
-msgstr "Pagina non trovata."
+msgstr "Page pas trouvée."
 
 #: ../404.php:15
 msgid "Reality is appearance, mistakes are always in wait."
 msgstr ""
-"La realtá é soltanto apparenza, gli sbagli sono sempre in attesa,  pronti ad "
-"essere compiuti."
+"La réalité est seulement apparence, les fautes sont toujours dans l'attente, "
+"prêts à être accomplies."
 
 #: ../404.php:16
 msgid "This page doesn't exist, now, one day it might."
-msgstr "Questa pagina non esiste, adesso, ma un giorno forse chissá."
+msgstr "Cette page n'esiste pas au présent, peut-être un jour qui sait."
 
 #: ../404.php:17
 msgid "Come back to a safer harbour."
-msgstr "Ritorna ad un porto sicuro."
+msgstr "Come back to a safer harbour."
 
 #: ../404.php:29 ../inc/template-tags.php:167
 msgid "Search"
-msgstr "Cerca"
+msgstr "Rechercher"
 
 #: ../404.php:41
 msgid "Popular Topics"
-msgstr "Argomenti in voga"
+msgstr "Arguments les plus lus"
 
 #: ../404.php:58
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Prova a cercare negli archivi mensili. %1$s"
+msgstr "Recherchez dans les archives mensuels. %1$s"
 
 #: ../archive.php:29
 #, php-format
 msgid "Author: %s"
-msgstr "Autore: %s"
+msgstr "Auteur: %s"
 
 #: ../archive.php:37
 #, php-format
 msgid "Day: %s"
-msgstr "Giorno: %s"
+msgstr "Jour: %s"
 
 #: ../archive.php:40
 #, php-format
 msgid "Month: %s"
-msgstr "Mese: %s"
+msgstr "Mois: %s"
 
 #: ../archive.php:43
 #, php-format
 msgid "Year: %s"
-msgstr "Anno: %s"
+msgstr "An: %s"
 
 #: ../archive.php:46
 msgid "Asides"
-msgstr "Approfondimento"
+msgstr "Approfondissement"
 
 #: ../archive.php:49
 msgid "Images"
-msgstr "Immagini"
+msgstr "Images"
 
 #: ../archive.php:52
 msgid "Videos"
-msgstr "Video"
+msgstr "Vidéos"
 
 #: ../archive.php:55
 msgid "Quotes"
-msgstr "Citazioni"
+msgstr "Citations"
 
 #: ../archive.php:58
 msgid "Links"
-msgstr "Links"
+msgstr "Liens"
 
 #: ../archive.php:61
 msgid "Archives"
-msgstr "Archivi"
+msgstr "Archives"
 
 #: ../content-aside.php:18 ../content-link.php:30 ../content-page.php:15
 #: ../content-quote.php:18 ../content-single.php:19 ../content.php:28
 msgid "Pages:"
-msgstr "Pagine:"
+msgstr "Pages:"
 
 #: ../content-aside.php:33 ../content-aside.php:43 ../content-link.php:43
 #: ../content-link.php:53 ../content-quote.php:30 ../content-quote.php:40
@@ -110,66 +110,63 @@ msgid ""
 "\"Permalink to %2$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
 "<span class=\"glyphicon glyphicon-link\"></span> <a href=\"%1$s\" title="
-"\"Link per %2$s\" rel=\"bookmark\">Link</a>."
+"\"Lien pour %2$s\" rel=\"bookmark\">Lien</a>."
 
 #: ../footer.php:20
 msgid "Subscribe to our newsletter!"
-msgstr "Registrati alla nostra newsletter!"
+msgstr "Inscrivez-vous à notre newsletter!"
 
 #: ../footer.php:30 ../footer.php:43
 msgid "Subscribe"
-msgstr "Registrati"
+msgstr "Enregistrez-vous"
 
 #: ../footer.php:51
 msgid "or follow us on"
-msgstr "o seguici su"
+msgstr "ou suivez-nous sur"
 
 #: ../front-page.php:49
 msgid ""
 "Map of The Railroad diaries - Click on the icons to see more of the project!"
 msgstr ""
-"Mappa del \"The Railroad diaries\" - Clicca sulle icone  per saperne di più "
-"sul progetto!"
+"Carte du \"The Railoroad Diaries\" - cliquez sur les icônes pour en savoir "
+"plus!"
 
 #: ../front-page.php:94
 msgid "Latest Blog Posts"
-msgstr "Ultimi post dal Blog"
+msgstr "Derniers posts du Blog"
 
 #: ../front-page.php:129
-#, fuzzy
 msgid "Support us!"
-msgstr "Supportaci"
+msgstr "Soutenez-nous"
 
 #: ../front-page.php:133
 msgid ""
 "If you like what we do, consider donate whatever you can to our projects!"
-msgstr ""
-"Se quello che facciamo vi interessa, suppportate il nostro lavoro con una "
-"donazione!"
+msgstr "Si cela vous intéresse , soutenez notre travail avec un don!"
 
 #: ../front-page.php:136
 msgid "Support Us"
-msgstr "Supportaci"
+msgstr "Soutenez-nous"
 
 #: ../front-page.php:149
 msgid "Latest articles from our projects"
-msgstr "Ultimi articoli dai nostri progetti"
+msgstr "Derniers articles du projet"
 
 #: ../front-page.php:213
 msgid "Curiosities"
-msgstr "Curiositá"
+msgstr "Curiosité"
 
 #: ../front-page.php:247 ../template_projects.php:110
 msgid "Legend"
-msgstr "Legenda"
+msgstr "Légende"
 
 #: ../front-page.php:251 ../template_projects.php:114
 msgid "Photo"
-msgstr "Foto"
+msgstr "Photos"
 
 #: ../front-page.php:255 ../template_projects.php:118
 msgid "People"
-msgstr "Persone"
+msgstr "Profiles"
 
 #: ../front-page.php:259 ../template_projects.php:122
 msgid "Blog"
@@ -181,11 +178,11 @@ msgstr "Audio"
 
 #: ../front-page.php:267 ../template_projects.php:130
 msgid "Article"
-msgstr "Articolo"
+msgstr "Article"
 
 #: ../front-page.php:271 ../template_projects.php:134
 msgid "Video"
-msgstr "Video"
+msgstr "Vidéo"
 
 #: ../front-page.php:285 ../front-page.php:290
 msgid "The Railroad Diaries"
@@ -222,35 +219,35 @@ msgstr ""
 
 #: ../functions.php:39
 msgid "Primary Menu"
-msgstr "Menu Principale"
+msgstr "Menu principal"
 
 #: ../functions.php:67
 msgid "Header right"
-msgstr "Testata destra"
+msgstr "Header right"
 
 #: ../functions.php:76
 msgid "Navigation bar right"
-msgstr "Barra di navigazione destra"
+msgstr "Barre de navigation droite"
 
 #: ../functions.php:85
 msgid "Sidebar left"
-msgstr "Barra laterale sinistra"
+msgstr "Barre latérale gauche"
 
 #: ../functions.php:94
 msgid "Sidebar right"
-msgstr "Barra laterale destra"
+msgstr "Barre latérale droite"
 
 #: ../functions.php:103
 msgid "Footer left"
-msgstr "Footer sinistro"
+msgstr "Footer gauche"
 
 #: ../functions.php:112
 msgid "Footer right"
-msgstr "Footer destro"
+msgstr "Footer droit"
 
 #: ../functions.php:180 ../functions.php:187
 msgid "Read More"
-msgstr "Continua"
+msgstr "Continuez"
 
 #: ../image.php:24
 #, php-format
@@ -260,60 +257,59 @@ msgid ""
 "image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
 "rel=\"gallery\">%8$s</a>"
 msgstr ""
-"Pubblicato il <span class=\"entry-date\"><time class=\"entry-date\" datetime="
-"\"%1$s\">%2$s</time></span> alle <a href=\"%3$s\" title=\"Link per "
-"l'immagine originale\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title="
-"\"Ritorna a %7$s\" rel=\"gallery\">%8$s</a>"
+"Publié le <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> à <a href=\"%3$s\" title=\"Lien pour l'image "
+"originale\">%4$s &times; %5$s</a> en <a href=\"%6$s\" title=\"Retournes à "
+"%7$s\" rel=\"gallery\">%8$s</a>"
 
 #: ../image.php:42
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
-msgstr "<span class=\"meta-nav\">&larr;</span> Precedenti"
+msgstr "<span class=\"meta-nav\">&larr;</span> Précedents"
 
 #: ../image.php:43
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Prossimi <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Prochains <span class=\"meta-nav\">&rarr;</span>"
 
 #: ../no-results.php:10
 msgid "Nothing Found"
-msgstr "Nessun risultato"
+msgstr "Aucun résultat"
 
 #: ../no-results.php:15
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Pronto a pubblicare il tuo primo post? <a href=\"%1$s\">Inizia da qui</a>."
+msgstr "Prêt à publier ton premier post? <a href=\"%1$s\">Cliques ici</a>."
 
 #: ../no-results.php:17
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Non abbiamo trovato nessun risultato per la tua ricerca. Prova di nuovo "
-"utilizzando diverse parole chiave."
+"Votre recherche n'a donné aucun résultat. Essayez encore avec des mors clés "
+"différents."
 
 #: ../no-results.php:20
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Non riusciamo a trovare la risorsa richiesta. Forse puoi provare ad "
-"effettuare una ricerca sul sito?"
+"On n'arrive pas à trouver la ressource requise. Essayez à effectuer une "
+"recherche sur le site."
 
 #: ../search.php:15
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Risultati per la ricerca riguardo: %s"
+msgstr "réultats de la récherche: %s"
 
 #: ../sidebar-blog.php:3
 msgid "Blog Topics"
-msgstr "Categorie del Blog"
+msgstr "Cathégories du blog"
 
 #: ../sidebar-blog.php:13 ../sidebar-carousel.php:13
 #: ../template_carousel.php:26
 #, php-format
 msgid "View all posts in %s"
-msgstr "Mostra tutti i post in %s"
+msgstr "Montres tous les posts en %s"
 
 #: ../sidebar-blog.php:17 ../sidebar-carousel.php:17
 msgid "Random Post"
@@ -321,60 +317,59 @@ msgstr "Random Post"
 
 #: ../sidebar-carousel.php:3 ../template_portfolio.php:13
 msgid "Sections"
-msgstr "Sezioni"
+msgstr "Sections"
 
 #: ../template_portfolio.php:38
 msgid "Countries"
-msgstr "Paesi"
+msgstr "Pays"
 
 #: ../template_project_timeline.php:11 ../template_projects.php:11
 msgid "The Railway Diary"
 msgstr "The Railway Diary"
 
 #: ../template_project_timeline.php:12 ../template_projects.php:12
-#, fuzzy
 msgid "A women’s epic journey along the Silk Road"
-msgstr "L'epico viaggio di tre donne lungo la leggendaria Via della Seta."
+msgstr "Un voyage épique au long de la Route de la Soie"
 
 #: ../template_projects.php:49
 msgid ""
 "Map of The Railroad diaries - Click on the train icon to see more of the "
 "project!"
 msgstr ""
-"Mappa del \"The Railroad diaries\" - Clicca sulle icone  per saperne di più "
-"sul progetto!"
+"Carte du \"The Railoroad Diaries\" - cliquez sur les icônes pour en savoir "
+"plus!"
 
 #: ../template_projects.php:83
 msgid "Discover the project!"
-msgstr "Scoprine di più!"
+msgstr "En savoir plus!"
 
 #: ../template_projects.php:84
 msgid ""
 "Click on the train and get the latest information on this great journey!"
 msgstr ""
-"Clicca sull'immagine del treno e scopri a che punto siamo con questo grande "
-"progetto!"
+"Cliquez sur l'image du train et découvrez à quel point on est arrivé de ce "
+"grand projet!"
 
 #: ../inc/adm-settings-pages.php:9
 msgid "FrontPage Settings"
-msgstr "Opzioni FrontPage"
+msgstr "Options FrontPage"
 
 #: ../inc/adm-settings-pages.php:12
 msgid "Change front page options here."
-msgstr "Cambia le opzioni per la front page qui."
+msgstr "Changez les options pour la première page ici."
 
 #: ../inc/adm-settings-pages.php:26
 msgid "Number of slides"
-msgstr "Numero di slides"
+msgstr "Nombre de slides"
 
 #: ../inc/extras.php:133
 #, php-format
 msgid "Page %s"
-msgstr "Pagina %s"
+msgstr "Page %s"
 
 #: ../inc/template-tags.php:18
 msgid "Posted in"
-msgstr "Pubblicato in"
+msgstr "Publié en"
 
 #: ../inc/template-tags.php:43
 msgid "Pingback:"
@@ -383,28 +378,28 @@ msgstr "Pingback:"
 #: ../inc/template-tags.php:45 ../inc/template-tags.php:86
 #: ../inc/template-tags.php:148
 msgid "Edit"
-msgstr "Modifica"
+msgstr "Modifiez"
 
 #: ../inc/template-tags.php:93
 msgid "Your comment is awaiting moderation."
-msgstr "Il tuo commento é in attesa di essere valutato da un moderatore."
+msgstr "Votre commentaire est en attente de modération"
 
 #: ../inc/template-tags.php:98
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">dice:</span>"
+msgstr "%s <span class=\"says\"> dit:</span>"
 
 #: ../inc/template-tags.php:110
 msgid "Reply"
-msgstr "Rispondi"
+msgstr "Répondez"
 
 #: ../inc/template-tags.php:111
 msgid "Log in to Reply"
-msgstr "Log in per rispondere"
+msgstr "Log in pour répondre"
 
 #: ../inc/template-tags.php:204
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Continua a leggere <span class=\"meta-nav\">&rarr;</span>"
+msgstr "lire la suite <span class=\"meta-nav\">&rarr;</span>"
 
 #: ../inc/template-tags.php:277
 #, php-format
@@ -412,92 +407,74 @@ msgid ""
 "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
 "%2$s</span>"
 msgstr ""
-"<span class=\"posted-on\">Pubblicato il %1$s</span><span class=\"byline\"> "
-"da %2$s</span>"
+"<span class=\"posted-on\">Publié le %1$s</span><span class=\"byline\"> par "
+"%2$s</span>"
 
 #: ../inc/template-tags.php:285
 #, php-format
 msgid "View all posts by %s"
-msgstr "Mostra tutti i posts di %s"
+msgstr "Tous les posts de %s"
 
 #: ../inc/template-tags.php:302
 msgid "Tagged"
-msgstr "Taggato"
+msgstr "Tagged"
 
 #~ msgid "Get in touch!"
 #~ msgstr "Contattaci!"
 
-#, fuzzy
 #~ msgid "Page"
-#~ msgstr "Pagine:"
+#~ msgstr "Page"
 
-#, fuzzy
 #~ msgid "Monthly Archives: %s"
-#~ msgstr "Mese: %s"
+#~ msgstr "Mois: %s"
 
-#, fuzzy
 #~ msgid "All posts by %s"
-#~ msgstr "Mostra tutti i posts di %s"
+#~ msgstr "Tous les posts de %s"
 
-#, fuzzy
 #~ msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-#~ msgstr "Continua a leggere <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
 
-#, fuzzy
 #~ msgid "Top primary menu"
-#~ msgstr "Menu Principale"
+#~ msgstr "Menu principal"
 
-#, fuzzy
 #~ msgid "Primary Sidebar"
-#~ msgstr "Menu Principale"
+#~ msgstr "barre latérale principal"
 
-#, fuzzy
 #~ msgid "Footer Widget Area"
-#~ msgstr "Footer destro"
+#~ msgstr "Footer Widget Area"
 
-#, fuzzy
 #~ msgid "<span class=\"meta-nav\">Published In</span>%title"
-#~ msgstr "<span class=\"meta-nav\">&larr;</span> Precedenti"
+#~ msgstr "<span class=\"meta-nav\">Publié en</span>%title"
 
-#, fuzzy
 #~ msgid "<span class=\"meta-nav\">Previous Post</span>%title"
-#~ msgstr "Prossimi <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "<span class=\"meta-nav\">Précedents Post</span>%title"
 
-#, fuzzy
 #~ msgid "<span class=\"meta-nav\">Next Post</span>%title"
-#~ msgstr "Prossimi <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "<span class=\"meta-nav\">Prochains Post</span>%title"
 
-#, fuzzy
 #~ msgid "%s <span class=\"meta-nav\">&rarr;</span>"
-#~ msgstr "Prossimi <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
 
-#, fuzzy
 #~ msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
-#~ msgstr "Prossimi <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "montres tous les posts de %s <span class=\"meta-nav\">&rarr;</span>"
 
-#, fuzzy
 #~ msgid "View all % comments"
-#~ msgstr "Mostra tutti i post in %s"
+#~ msgstr "montres tous % commentaires"
 
-#, fuzzy
 #~ msgid "Navigation Menu"
-#~ msgstr "Barra di navigazione destra"
+#~ msgstr "Menu de navigation"
 
-#, fuzzy
 #~ msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-#~ msgstr "<span class=\"meta-nav\">&larr;</span> Precedenti"
+#~ msgstr "<span class=\"meta-nav\">&larr;</span> Précedents posts"
 
-#, fuzzy
 #~ msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-#~ msgstr "Prossimi <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Prochains posts <span class=\"meta-nav\">&rarr;</span>"
 
-#, fuzzy
 #~ msgid ""
 #~ "<span class=\"attachment-meta\">Published on <time class=\"entry-date\" "
 #~ "datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s"
 #~ "\" rel=\"gallery\">%5$s</a></span>"
 #~ msgstr ""
-#~ "Pubblicato il <span class=\"entry-date\"><time class=\"entry-date\" "
-#~ "datetime=\"%1$s\">%2$s</time></span> alle <a href=\"%3$s\" title=\"Link "
-#~ "per l'immagine originale\">%4$s &times; %5$s</a> in <a href=\"%6$s\" "
-#~ "title=\"Ritorna a %7$s\" rel=\"gallery\">%8$s</a>"
+#~ "<span class=\"attachment-meta\">Publié le <time class=\"entry-date\" "
+#~ "datetime=\"%1$s\">%2$s</time> en <a href=\"%3$s\" title=\"Retournes à %4$s"
+#~ "\" rel=\"gallery\">%5$s</a></span>"
