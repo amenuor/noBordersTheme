@@ -84,7 +84,7 @@ get_header();
 		<p><?php _e("Click on the train and get the latest information on this great journey!", "noborders"); ?></p>
 	</div>
 	<div class="large-6 columns">
-		<a href="/the-railway-diary" class="right"><img src="<?php echo get_template_directory_uri();?>/img/train.png"></a>
+		<a href="/the-railway-diaries/" class="right"><img src="<?php echo get_template_directory_uri();?>/img/train.png"></a>
 	</div>
 </div>
 </div>
