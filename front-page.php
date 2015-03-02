@@ -46,7 +46,7 @@ get_header();
 			<!-- Map! -->
 			<div id="map" style="width:1000px; height: 400px;"></div>
 			<div class="orbit-caption">
-				<?php _e("Map of The Railroad diaries - Click on the icons to see more of the project!", "noborders"); ?>
+				<?php _e("Map of The Railway diaries - Click on the icons to see more of the project!", "noborders"); ?>
 			</div>
 		</li>
 		<?php
@@ -130,10 +130,20 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
             
 <div class="row">
 	<div class="large-9 columns">
-		<p><?php _e("If you like what we do, consider donate whatever you can to our projects!", "noborders"); ?></p>
+		<p><?php _e("If you like our work please donate whatever you can to help us move on with our projects!", "noborders"); ?></p>
 	</div>
 	<div class="large-3 columns">
-		<a href="/contacts" class="radius button right"><?php _e("Support Us", "noborders"); ?></a>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_donations">
+		<input type="hidden" name="business" value="eleonora.vio@gmail.com">
+		<input type="hidden" name="lc" value="US">
+		<input type="hidden" name="item_name" value="Nawart Press">
+		<input type="hidden" name="no_note" value="0">
+		<input type="hidden" name="currency_code" value="EUR">
+		<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+		<input type="submit" name="submit" class="radius button right" value="<?php _e("Support Us", "noborders"); ?>">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>		
 	</div>
 </div>
 </div>
@@ -146,7 +156,7 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
 <!-- Latest articles from our projects Blocks -->
 
 <div class="row">
-<h4 class="text-center"><?php _e("Latest articles from our projects", "noborders"); ?></h4>
+<h4 class="text-center"><?php _e("Latest articles", "noborders"); ?></h4>
 		
 <?php
 $args = array(
@@ -282,12 +292,12 @@ if(jQuery('#departureBoard').is(':visible'))
 	setInterval(updateBoard, 24000);	
 	function updateBoard()
 	{
-		board.setValue (['    <?php _e('The Railroad Diaries', 'noborders') ?>    ', 
+		board.setValue (['    <?php _e('The Railway Diaries', 'noborders') ?>     ', 
 		 				 '          <?php _e('Samarkand', 'noborders') ?>         ',
 		 				 '<?php _e('3  days', 'noborders') ?>                     ',
 						 '<?php _e('52 steps', 'noborders') ?>                    ']);
 		setTimeout(function(){
-			board.setValue (['    <?php _e('The Railroad Diaries', 'noborders') ?>    ', 
+			board.setValue (['    <?php _e('The Railway Diaries', 'noborders') ?>     ', 
 		 					 '          <?php _e('Samarkand', 'noborders') ?>         ',
 		 					 '<?php _e('5  articles', 'noborders') ?>                     ',
 		 					 '<?php _e('12 blog posts', 'noborders') ?>                    ']);
@@ -301,13 +311,13 @@ if(jQuery('#departureBoard').is(':visible'))
 	setInterval(updateBoardForSmall, 24000);	
 	function updateBoardForSmall()
 	{
-		boardForSmall.setValue ([' <?php _e('The Railroad', 'noborders') ?> ', 
+		boardForSmall.setValue ([' <?php _e('The Railway', 'noborders') ?>  ', 
 		 				         '   <?php _e('Diaries', 'noborders') ?>    ',
 		 				         '  <?php _e('Samarkand', 'noborders') ?>   ',
 		 				         '<?php _e('3  days', 'noborders') ?>       ',
 						         '<?php _e('52 steps', 'noborders') ?>      ']);
 		setTimeout(function(){
-			boardForSmall.setValue ([' <?php _e('The Railroad', 'noborders') ?> ', 
+			boardForSmall.setValue ([' <?php _e('The Railway', 'noborders') ?>  ', 
 		 				         '   <?php _e('Diaries', 'noborders') ?>    ',
 		 				         '  <?php _e('Samarkand', 'noborders') ?>   ',
 		 					     '<?php _e('5  articles', 'noborders') ?>   ',

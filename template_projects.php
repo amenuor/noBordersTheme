@@ -8,7 +8,7 @@ get_header();
 
 ?>
 
-<h4><?php _e("The Railway Diary");?></h4>
+<h4><?php _e("The Railway Diaries");?></h4>
 <h5><?php _e("A women’s epic journey along the Silk Road");?></h5>
 
 <div class="row show-for-small-only">
@@ -46,7 +46,7 @@ get_header();
 			<!-- Map! -->
 			<div id="map" style="width:1000px; height: 400px;"></div>
 			<div class="orbit-caption">
-				<?php _e("Map of The Railroad diaries - Click on the train icon to see more of the project!", "noborders"); ?>
+				<?php _e("Map of The Railway diaries - Click on the train icon to see more of the project!", "noborders"); ?>
 			</div>
 		</li>
 		<?php

@@ -8,7 +8,7 @@ get_header();
 
 ?>
 
-<h4><?php _e("The Railway Diary");?></h4>
+<h4><?php _e("The Railway Diaries");?></h4>
 <h5><?php _e("A women’s epic journey along the Silk Road");?></h5>
 
 	<section id="cd-timeline" class="cd-container">

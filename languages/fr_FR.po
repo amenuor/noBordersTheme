@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NoBorders\n"
-"POT-Creation-Date: 2015-03-02 08:40+0100\n"
-"PO-Revision-Date: 2015-03-02 08:42+0100\n"
+"POT-Creation-Date: 2015-03-02 20:28+0100\n"
+"PO-Revision-Date: 2015-03-02 20:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: YanchWare <contacts@yanchware.com>\n"
 "Language: French\n"
@@ -126,9 +126,9 @@ msgstr "ou suivez-nous sur"
 
 #: ../front-page.php:49
 msgid ""
-"Map of The Railroad diaries - Click on the icons to see more of the project!"
+"Map of The Railway diaries - Click on the icons to see more of the project!"
 msgstr ""
-"Carte du \"The Railoroad Diaries\" - cliquez sur les icônes pour en savoir "
+"Carte du \"The Railway Diaries\" - cliquez sur les icônes pour en savoir "
 "plus!"
 
 #: ../front-page.php:94
@@ -140,80 +140,83 @@ msgid "Support us!"
 msgstr "Soutenez-nous"
 
 #: ../front-page.php:133
+#, fuzzy
 msgid ""
-"If you like what we do, consider donate whatever you can to our projects!"
+"If you like our work please donate whatever you can to help us move on with "
+"our projects!"
 msgstr "Si cela vous intéresse , soutenez notre travail avec un don!"
 
-#: ../front-page.php:136
+#: ../front-page.php:144
 msgid "Support Us"
 msgstr "Soutenez-nous"
 
-#: ../front-page.php:149
-msgid "Latest articles from our projects"
-msgstr "Derniers articles du projet"
+#: ../front-page.php:159
+msgid "Latest articles"
+msgstr "Derniers articles"
 
-#: ../front-page.php:213
+#: ../front-page.php:223
 msgid "Curiosities"
 msgstr "Curiosité"
 
-#: ../front-page.php:247 ../template_projects.php:110
+#: ../front-page.php:257 ../template_projects.php:110
 msgid "Legend"
 msgstr "Légende"
 
-#: ../front-page.php:251 ../template_projects.php:114
+#: ../front-page.php:261 ../template_projects.php:114
 msgid "Photo"
 msgstr "Photos"
 
-#: ../front-page.php:255 ../template_projects.php:118
+#: ../front-page.php:265 ../template_projects.php:118
 msgid "People"
 msgstr "Profiles"
 
-#: ../front-page.php:259 ../template_projects.php:122
+#: ../front-page.php:269 ../template_projects.php:122
 msgid "Blog"
 msgstr "Blog"
 
-#: ../front-page.php:263 ../template_projects.php:126
+#: ../front-page.php:273 ../template_projects.php:126
 msgid "Audio"
 msgstr "Audio"
 
-#: ../front-page.php:267 ../template_projects.php:130
+#: ../front-page.php:277 ../template_projects.php:130
 msgid "Article"
 msgstr "Article"
 
-#: ../front-page.php:271 ../template_projects.php:134
+#: ../front-page.php:281 ../template_projects.php:134
 msgid "Video"
 msgstr "Vidéo"
 
-#: ../front-page.php:285 ../front-page.php:290
-msgid "The Railroad Diaries"
-msgstr "The Railroad Diaries"
+#: ../front-page.php:295 ../front-page.php:300
+#: ../template_project_timeline.php:11 ../template_projects.php:11
+msgid "The Railway Diaries"
+msgstr "The Railway Diaries"
 
-#: ../front-page.php:286 ../front-page.php:291 ../front-page.php:306
-#: ../front-page.php:312
+#: ../front-page.php:296 ../front-page.php:301 ../front-page.php:316
+#: ../front-page.php:322
 msgid "Samarkand"
 msgstr ""
 
-#: ../front-page.php:287 ../front-page.php:307
+#: ../front-page.php:297 ../front-page.php:317
 msgid "3  days"
 msgstr ""
 
-#: ../front-page.php:288 ../front-page.php:308
+#: ../front-page.php:298 ../front-page.php:318
 msgid "52 steps"
 msgstr ""
 
-#: ../front-page.php:292 ../front-page.php:313
+#: ../front-page.php:302 ../front-page.php:323
 msgid "5  articles"
 msgstr ""
 
-#: ../front-page.php:293 ../front-page.php:314
+#: ../front-page.php:303 ../front-page.php:324
 msgid "12 blog posts"
 msgstr ""
 
-#: ../front-page.php:304 ../front-page.php:310
-msgid "The Railroad"
-msgstr ""
+#: ../front-page.php:314 ../front-page.php:320
+msgid "The Railway"
+msgstr "The Railway"
 
-#: ../front-page.php:305 ../front-page.php:311
+#: ../front-page.php:315 ../front-page.php:321
 msgid "Diaries"
 msgstr ""
 
@@ -323,20 +326,16 @@ msgstr "Sections"
 msgid "Countries"
 msgstr "Pays"
 
-#: ../template_project_timeline.php:11 ../template_projects.php:11
-msgid "The Railway Diary"
-msgstr "The Railway Diary"
-
 #: ../template_project_timeline.php:12 ../template_projects.php:12
 msgid "A women’s epic journey along the Silk Road"
 msgstr "Un voyage épique au long de la Route de la Soie"
 
 #: ../template_projects.php:49
 msgid ""
-"Map of The Railroad diaries - Click on the train icon to see more of the "
+"Map of The Railway diaries - Click on the train icon to see more of the "
 "project!"
 msgstr ""
-"Carte du \"The Railoroad Diaries\" - cliquez sur les icônes pour en savoir "
+"Carte du \"The Railway Diaries\" - cliquez sur les icônes pour en savoir "
 "plus!"
 
 #: ../template_projects.php:83
@@ -418,6 +417,9 @@ msgstr "Tous les posts de %s"
 #: ../inc/template-tags.php:302
 msgid "Tagged"
 msgstr "Tagged"
+
+#~ msgid "The Railroad Diaries"
+#~ msgstr "The Railroad Diaries"
 
 #~ msgid "Get in touch!"
 #~ msgstr "Contattaci!"
