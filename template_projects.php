@@ -30,7 +30,7 @@ get_header();
 			} 
 			?>
 			<div class="orbit-caption">
-				<?php the_content(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>				
 			</div>
 		</li>
 		<?php endwhile; ?>		
@@ -65,7 +65,7 @@ get_header();
 			} 
 			?>
 			<div class="orbit-caption">
-				<?php the_content(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</div>
 		</li>
 	<?php endwhile; ?>		

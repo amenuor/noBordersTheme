@@ -30,7 +30,7 @@ get_header();
 			} 
 			?>
 			<div class="orbit-caption">
-				<?php the_content(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</div>
 		</li>
 		<?php endwhile; ?>		
@@ -67,7 +67,7 @@ get_header();
 			} 
 			?>
 			<div class="orbit-caption">
-				<?php the_content(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</div>
 		</li>
 	<?php endwhile; ?>		
@@ -111,7 +111,7 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
 		the_post_thumbnail('medium');
 	} 
 	?>
-	<h4><?php the_title(); ?></h4>
+	<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 	<h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
 	<hr>
 	<div class="text-justify">
@@ -176,7 +176,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 	the_post_thumbnail('medium');
 } 
 ?>
-<h4><?php the_title(); ?></h4>
+<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 <h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
 <hr>
 				
@@ -202,7 +202,7 @@ $latest = new WP_Query( $args );
 while( $latest->have_posts() ) : $latest->the_post(); ?>
 <div class="large-12 columns text-center">
 <div class="clearfix text-center">
-<h4><?php the_title(); ?></h4>
+<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 <?php 
 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 the_post_thumbnail('original');
@@ -240,7 +240,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 the_post_thumbnail('medium');
 } 
 ?>
-<h4><?php the_title(); ?></h4>
+<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 <h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
 <hr>
 				
