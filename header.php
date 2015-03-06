@@ -35,7 +35,9 @@
 			<?php
 			$args = array(
 			'paged' => $paged,
-			'cat' => 8 //Category for posts that should be on the Google Map
+			'cat' => 8, //Category for posts that should be on the Google Map
+			'orderby' => 'date',
+			'order' => 'ASC'
 			);
 			
 			//The Loop

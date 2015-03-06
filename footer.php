@@ -16,33 +16,62 @@
 		<p>
 			<div class="row">
 				<div class="large-12 columns">
-					<div class="signup-panel">
+					<div id="mc_embed_signup" class="signup-panel">
 						<p class="welcome"><?php _e("Subscribe to our newsletter!", "noborders"); ?> </p>
-						<form>
-							<div class="row collapse show-for-medium-up">
-								<div class="small-2 columns">
-									<span class="prefix"><i class="fi-mail"></i></span>
+						<form action="//nawartpress.us10.list-manage.com/subscribe/post?u=65b1811724da713522a93f8c8&amp;id=ac34a9f562" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate show-for-medium-up" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+								<div class="mc-field-group">
+									
+									<div class="row collapse show-for-medium-up">
+										<div class="small-2 columns">
+											<span class="prefix"><i class="fi-mail"></i></span>
+										</div>
+										<div class="small-8 columns">
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+										</div>
+										<div class="small-2 columns">
+									<input type="submit" value="<?php _e("Subscribe", "noborders"); ?>" name="subscribe" id="mc-embedded-subscribe" class="button">
+										</div>					
+									</div>
+																		
 								</div>
-								<div class="small-8 columns">
-									<input type="text" placeholder="Email">
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
 								</div>
-								<div class="small-2 columns">
-									<a href="#" class="button radius"><?php _e("Subscribe", "noborders"); ?></a>
-								</div>					
-							</div>
-							<div class="row collapse show-for-small-only">
-								<div class="small-2 columns">
-									<span class="prefix"><i class="fi-mail"></i></span>
+						    	<div style="position: absolute; left: -5000px;">
+									<input type="text" name="b_65b1811724da713522a93f8c8_ac34a9f562" tabindex="-1" value="">
 								</div>
-								<div class="small-10 columns">
-									<input type="text" placeholder="Email">
+						    </div>
+						</form>
+						
+						<form action="//nawartpress.us10.list-manage.com/subscribe/post?u=65b1811724da713522a93f8c8&amp;id=ac34a9f562" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate show-for-small-only" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+								<div class="mc-field-group">
+																		
+									<div class="row collapse">
+										<div class="small-2 columns">
+											<span class="prefix"><i class="fi-mail"></i></span>
+										</div>
+										<div class="small-10 columns">
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+										</div>
+									</div>
+									<div class="row collapse">
+										<div class="small-12 columns text-centered lower">
+									<input type="submit" value="<?php _e("Subscribe", "noborders"); ?>" name="subscribe" id="mc-embedded-subscribe" class="button">
+										</div>					
+									</div>
+									
 								</div>
-							</div>
-							<div class="row collapse show-for-small-only">
-								<div class="small-12 columns text-centered lower">
-									<a href="#" class="button radius lower"><?php _e("Subscribe", "noborders"); ?></a>
-								</div>					
-							</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>
+						    	<div style="position: absolute; left: -5000px;">
+									<input type="text" name="b_65b1811724da713522a93f8c8_ac34a9f562" tabindex="-1" value="">
+								</div>
+						    </div>
 						</form>
 					</div>
 				</div>
@@ -69,6 +98,10 @@
 	</div>
 			   
 </div>
+
+	</div>
+</div>
+
 </footer>
 
 </div><!--.container page-container-->
@@ -76,7 +109,9 @@
 		
 <!--wordpress footer-->
 <?php wp_footer(); ?> 
-<script>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);
 jQuery(document).foundation();
 </script>
 </body>
