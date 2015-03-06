@@ -18,7 +18,8 @@
 
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		
+		<link rel="icon" type="image/jpg" href="<?php echo get_template_directory_uri() . '/img/nawart_favicon.jpg'; ?>">
+	  		
 		<!--wordpress head-->
 		<?php wp_head(); ?>
 		
@@ -132,7 +133,7 @@
 			<?php do_action('before'); ?> 
 			<header role="banner">
 				<div class="row row-with-vspace site-branding">
-					<div class="large-12 columns text-center">
+					<div class="large-12 columns text-centernawart-06_YELLOW_small.jpg">
 						<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php echo get_template_directory_uri() . '/img/nawart-06_YELLOW.jpg'; ?>"></a>
 					</div>
 				</div><!--.site-branding-->

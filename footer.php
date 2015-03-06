@@ -79,12 +79,12 @@
 
 			<p><?php _e("or follow us on", "noborders"); ?></p>
 			<div class="medium-12 columns">
-				<a href="#"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/facebook-icon.png" /></a>
-				<a href="#"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/flickr-icon.png" /></a>
-				<a href="#"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/instagram-icon.png" /></a>
-				<a href="#"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png" /></a>
-				<a href="#"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/youtube-icon.png" /></a>
-				<a href="#"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/soundcloud-icon.png" /></a>
+				<a href="https://www.facebook.com/nawartpress" target="_blank"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/facebook-icon.png" /></a>
+				<a href="https://www.flickr.com/photos/130959910@N05/" target="_blank"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/flickr-icon.png" /></a>
+				<a href="http://www.instagram.com/nawart_press" target="_blank"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/instagram-icon.png" /></a>
+				<a href="https://twitter.com/NawartPress" target="_blank"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png" /></a>
+				<a href="https://www.youtube.com/channel/UChK3l3IZALtHHGwb4XAsEhA" target="_blank"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/youtube-icon.png" /></a>
+				<a href="https://soundcloud.com/nawart-press" target="_blank"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/soundcloud-icon.png" /></a>
 				<a href="/feed"><img width='60px' src="<?php echo get_template_directory_uri();?>/img/rss-icon.png" /></a>
 			</div>
 			   
