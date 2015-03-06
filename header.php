@@ -132,15 +132,8 @@
 			<?php do_action('before'); ?> 
 			<header role="banner">
 				<div class="row row-with-vspace site-branding">
-					<div class="col-md-6 site-title">
-						<h1 class="site-title-heading">
-							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
-						</h1>
-						<div class="site-description">
-							<small>
-								<?php bloginfo('description'); ?> 
-							</small>
-						</div>
+					<div class="large-12 columns text-center">
+						<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php echo get_template_directory_uri() . '/img/nawart-06_YELLOW.jpg'; ?>"></a>
 					</div>
 				</div><!--.site-branding-->
 				
