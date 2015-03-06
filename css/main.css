@@ -23,6 +23,11 @@ body{
     font-family: 'Rambla' !important;
 }
 
+iframe
+{
+	width: 1000px !important;
+}
+
 h1, h2, h3, h4, h5, h6
 {
     font-family: 'BureauGrotesque' !important;

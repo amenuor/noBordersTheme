@@ -46,7 +46,9 @@ get_header();
 			<!-- Map! -->
 			<div id="map" style="width:1000px; height: 400px;"></div>
 			<div class="orbit-caption">
-				<?php _e("Map of The Railway diaries - Click on the icons to see more of the project!", "noborders"); ?>
+				<?php _e("Map of "); ?>  
+				<a href="/projects/"><?php _e("The Railway diaries"); ?></a>
+				<?php _e(" - Click on the icons to see more of the project!", "noborders"); ?>
 			</div>
 		</li>
 		<?php
@@ -328,5 +330,12 @@ if(jQuery('#departureBoard').is(':visible'))
 }
 </script>
 
+<div class="row">
+<div class="large-12 columns">	
+<a class="twitter-timeline" href="https://twitter.com/search?q=%40nawartpress%20OR%20%23press"
+width="900" height="300" data-widget-id="573825317447532544">Tweets about @nawartpress OR #press</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
 
 <?php get_footer(); ?> 
