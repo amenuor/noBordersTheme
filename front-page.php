@@ -286,7 +286,11 @@ the_post_thumbnail('medium');
 </div>
 
 <script type="text/javascript">
-	
+
+<?php	  
+	$blogCategory = get_category_by_slug('blog');
+?>
+
 if(jQuery('#departureBoard').is(':visible'))
 {
 	var board = new DepartureBoard (document.getElementById ('departureBoard'), { rowCount: 4, letterCount: 28 }); 
@@ -301,8 +305,8 @@ if(jQuery('#departureBoard').is(':visible'))
 		setTimeout(function(){
 			board.setValue (['    <?php _e('The Railway Diaries', 'noborders') ?>     ', 
 		 					 '          <?php _e('Samarkand', 'noborders') ?>         ',
-		 					 '<?php _e('5  articles', 'noborders') ?>                     ',
-		 					 '<?php _e('12 blog posts', 'noborders') ?>                    ']);
+		 					 '<?php echo wp_count_posts()->publish . __(' articles', 'noborders') ?>                     ',
+		 					 '<?php echo $blogCategory->count . __(' blog posts', 'noborders') ?>                    ']);
 		}, 12000)
 	}
 	updateBoard();			
@@ -322,8 +326,8 @@ if(jQuery('#departureBoard').is(':visible'))
 			boardForSmall.setValue ([' <?php _e('The Railway', 'noborders') ?>  ', 
 		 				         '   <?php _e('Diaries', 'noborders') ?>    ',
 		 				         '  <?php _e('Samarkand', 'noborders') ?>   ',
-		 					     '<?php _e('5  articles', 'noborders') ?>   ',
-		 					     '<?php _e('12 blog posts', 'noborders') ?> ']);
+		 					     '<?php echo wp_count_posts()->publish . __(' articles', 'noborders') ?>   ',
+		 					     '<?php $blogCategory->count . __(' blog posts', 'noborders') ?> ']);
 		}, 12000)
 	}
 	updateBoardForSmall();			
