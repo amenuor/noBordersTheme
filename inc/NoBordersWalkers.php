@@ -10,7 +10,7 @@ if (!class_exists('NoBordersWalkerNavMenu')) {
 	class NoBordersWalkerNavMenu extends Walker_Nav_Menu
 	{
 		
-		function start_lvl(&$output, $depth) {
+		function start_lvl(&$output, $depth = 0, $args = array()) {
 			$indent = str_repeat("\t", $depth);
 			$output .= "\n$indent<ul class=\"dropdown\">\n";
 		}		
@@ -55,7 +55,7 @@ if (!class_exists('NoBordersWalkerComment')) {
 	    <?php }
      
 	    /** START_EL */
-	    function start_el( &$output, $comment, $depth, $args, $id = 0 ) {
+	    function start_el( &$output, $comment, $depth=0, $args=array(), $id = 0 ) {
 	        $depth++;
 	        $GLOBALS['comment_depth'] = $depth;
 	        $GLOBALS['comment'] = $comment; 

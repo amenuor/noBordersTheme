@@ -299,12 +299,12 @@ if(jQuery('#departureBoard').is(':visible'))
 	function updateBoard()
 	{
 		board.setValue (['    <?php _e('The Railway Diaries', 'noborders') ?>     ', 
-		 				 '          <?php _e('Samarkand', 'noborders') ?>         ',
-		 				 '<?php _e('3  days', 'noborders') ?>                     ',
-						 '<?php _e('52 steps', 'noborders') ?>                    ']);
+		 				 '<?php echo get_option('nawart_theme_display_options')['current_location'] ?>',
+		 				 '<?php echo get_option('nawart_theme_display_options')['days_spent'] . __(' days', 'noborders') ?>',
+						 '<?php echo get_option('nawart_theme_display_options')['steps_counter'] . __(' steps', 'noborders') ?>']);
 		setTimeout(function(){
 			board.setValue (['    <?php _e('The Railway Diaries', 'noborders') ?>     ', 
-		 					 '          <?php _e('Samarkand', 'noborders') ?>         ',
+   						  	 '<?php echo get_option('nawart_theme_display_options')['current_location'] ?>',
 		 					 '<?php echo wp_count_posts()->publish . __(' articles', 'noborders') ?>                     ',
 		 					 '<?php echo $blogCategory->count . __(' blog posts', 'noborders') ?>                    ']);
 		}, 12000)
@@ -319,13 +319,13 @@ if(jQuery('#departureBoard').is(':visible'))
 	{
 		boardForSmall.setValue ([' <?php _e('The Railway', 'noborders') ?>  ', 
 		 				         '   <?php _e('Diaries', 'noborders') ?>    ',
-		 				         '  <?php _e('Samarkand', 'noborders') ?>   ',
-		 				         '<?php _e('3  days', 'noborders') ?>       ',
-						         '<?php _e('52 steps', 'noborders') ?>      ']);
+							     '<?php echo get_option('nawart_theme_display_options')['current_location'] ?>',
+		 						 '<?php echo get_option('nawart_theme_display_options')['days_spent'] . __(' days', 'noborders') ?>',
+		 						 '<?php echo get_option('nawart_theme_display_options')['steps_counter'] . __(' steps', 'noborders') ?>']);
 		setTimeout(function(){
 			boardForSmall.setValue ([' <?php _e('The Railway', 'noborders') ?>  ', 
 		 				         '   <?php _e('Diaries', 'noborders') ?>    ',
-		 				         '  <?php _e('Samarkand', 'noborders') ?>   ',
+							     '<?php echo get_option('nawart_theme_display_options')['current_location'] ?>',
 		 					     '<?php echo wp_count_posts()->publish . __(' articles', 'noborders') ?>   ',
 		 					     '<?php $blogCategory->count . __(' blog posts', 'noborders') ?> ']);
 		}, 12000)
