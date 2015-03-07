@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NoBorders\n"
-"POT-Creation-Date: 2015-03-05 14:46+0100\n"
-"PO-Revision-Date: 2015-03-05 14:49+0100\n"
+"POT-Creation-Date: 2015-03-07 14:42+0100\n"
+"PO-Revision-Date: 2015-03-07 14:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: YanchWare <contacts@yanchware.com>\n"
 "Language: Italian\n"
@@ -116,11 +116,11 @@ msgstr ""
 msgid "Subscribe to our newsletter!"
 msgstr "Registrati alla nostra newsletter!"
 
-#: ../footer.php:30 ../footer.php:43
+#: ../footer.php:33 ../footer.php:62
 msgid "Subscribe"
 msgstr "Registrati"
 
-#: ../footer.php:51
+#: ../footer.php:80
 msgid "or follow us on"
 msgstr "o seguici su"
 
@@ -192,37 +192,32 @@ msgstr "Articolo"
 msgid "Video"
 msgstr "Video"
 
-#: ../front-page.php:297 ../front-page.php:302
+#: ../front-page.php:301 ../front-page.php:306
 #: ../template_project_timeline.php:11 ../template_projects.php:11
 msgid "The Railway Diaries"
 msgstr "The Railway Diaries"
 
-#: ../front-page.php:298 ../front-page.php:303 ../front-page.php:318
-#: ../front-page.php:324
-msgid "Samarkand"
-msgstr ""
+#: ../front-page.php:303 ../front-page.php:323
+msgid " days"
+msgstr " giorni"
 
-#: ../front-page.php:299 ../front-page.php:319
-msgid "3  days"
-msgstr ""
+#: ../front-page.php:304 ../front-page.php:324
+msgid " steps"
+msgstr " passi"
 
-#: ../front-page.php:300 ../front-page.php:320
-msgid "52 steps"
-msgstr ""
+#: ../front-page.php:308 ../front-page.php:329
+msgid " articles"
+msgstr " articoli"
 
-#: ../front-page.php:304 ../front-page.php:325
-msgid "5  articles"
-msgstr ""
+#: ../front-page.php:309 ../front-page.php:330
+msgid " blog posts"
+msgstr " post sul blog"
 
-#: ../front-page.php:305 ../front-page.php:326
-msgid "12 blog posts"
-msgstr ""
-
-#: ../front-page.php:316 ../front-page.php:322
+#: ../front-page.php:320 ../front-page.php:326
 msgid "The Railway"
 msgstr "The Railway"
 
-#: ../front-page.php:317 ../front-page.php:323
+#: ../front-page.php:321 ../front-page.php:327
 msgid "Diaries"
 msgstr ""
 
@@ -311,23 +306,18 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr "Risultati per la ricerca riguardo: %s"
 
-#: ../sidebar-blog.php:3
-msgid "Blog Topics"
-msgstr "Categorie del Blog"
-
-#: ../sidebar-blog.php:13 ../sidebar-carousel.php:13
-#: ../template_carousel.php:26
-#, php-format
-msgid "View all posts in %s"
-msgstr "Mostra tutti i post in %s"
-
-#: ../sidebar-blog.php:17 ../sidebar-carousel.php:17
+#: ../sidebar-blog.php:4 ../sidebar-carousel.php:17
 msgid "Random Post"
 msgstr "Random Post"
 
 #: ../sidebar-carousel.php:3 ../template_portfolio.php:13
 msgid "Sections"
 msgstr "Sezioni"
+
+#: ../sidebar-carousel.php:13 ../template_carousel.php:26
+#, php-format
+msgid "View all posts in %s"
+msgstr "Mostra tutti i post in %s"
 
 #: ../template_portfolio.php:38
 msgid "Countries"
@@ -355,18 +345,6 @@ msgid ""
 msgstr ""
 "Clicca sull'immagine del treno e scopri a che punto siamo con questo grande "
 "progetto!"
-
-#: ../inc/adm-settings-pages.php:9
-msgid "FrontPage Settings"
-msgstr "Opzioni FrontPage"
-
-#: ../inc/adm-settings-pages.php:12
-msgid "Change front page options here."
-msgstr "Cambia le opzioni per la front page qui."
-
-#: ../inc/adm-settings-pages.php:26
-msgid "Number of slides"
-msgstr "Numero di slides"
 
 #: ../inc/extras.php:133
 #, php-format
@@ -424,6 +402,18 @@ msgstr "Mostra tutti i posts di %s"
 #: ../inc/template-tags.php:302
 msgid "Tagged"
 msgstr "Taggato"
+
+#~ msgid "Blog Topics"
+#~ msgstr "Categorie del Blog"
+
+#~ msgid "FrontPage Settings"
+#~ msgstr "Opzioni FrontPage"
+
+#~ msgid "Change front page options here."
+#~ msgstr "Cambia le opzioni per la front page qui."
+
+#~ msgid "Number of slides"
+#~ msgstr "Numero di slides"
 
 #~ msgid "The Railroad Diaries"
 #~ msgstr "The Railroad Diaries"

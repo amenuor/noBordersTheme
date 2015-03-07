@@ -1,10 +1,11 @@
 <?php 
+
 function nawart_theme_menu() {
  
-    add_theme_page(
+    add_dashboard_page(
         'Nawart Theme',            // The title to be displayed in the browser window for this page.
         'Nawart Theme',            // The text to be displayed for this menu item
-        'administrator',                  // Which type of users can see this menu item
+        'read',           // Which type of users can see this menu item
         'nawart_theme_options',   // The unique ID - that is, the slug - for this menu item
         'nawart_theme_display'    // The name of the function to call when rendering this menu's page
     );
