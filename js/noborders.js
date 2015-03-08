@@ -30,6 +30,7 @@ function initMap() {
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
         zoom: 4,
+		maxZoom: 10,
 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(32.6700, 53.9400), // Iran
@@ -74,4 +75,7 @@ function initMap() {
 	// Add legend
 	map.controls[google.maps.ControlPosition.LEFT_CENTER].push(
 	  document.getElementById('legend'));
+	
+  	console.log(map.getZoom())
+		
 }

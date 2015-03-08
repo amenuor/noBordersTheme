@@ -94,7 +94,7 @@
             
 <div class="credits row">
 	<div class="small-12 columns text-right">
-		Powered by <a href="https://www.yanchware.com" target="_blank">YanchWare</a>
+		Designed by <a href="https://www.yanchware.com" target="_blank">YanchWare</a>
 	</div>
 			   
 </div>
