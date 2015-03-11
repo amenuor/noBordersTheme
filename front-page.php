@@ -341,4 +341,50 @@ if(jQuery('#departureBoard').is(':visible'))
 </div>
 </div>
 
+<div class="row text-center" style="margin-top: 50px">
+<h3><?php _e('We have worked with', 'noborders') ?></h3>
+<div class="list_carousel responsive" >
+	<ul id="collaborationCarousel">
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/aljazeera.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/area.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/artshub.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/atlantic.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/azione.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/bhe.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/caffe.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/cairopost.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/choisir.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/communityTimes.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/ecoDiBergamo.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/emergency.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/europa.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/fattoQuotidiano.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/FO.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/left.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/lettera22.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/limes.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/mee.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/nena.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/nigrizia.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/pagina99.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/raiNews24.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/regioneTicino.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/repubblica.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/robMorrione.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/smt.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/unita.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/venerdi.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/vitaTrentina.png" /></li>			  
+	</ul>
+	<div class="clearfix"></div>
+</div>
+</div>
+
+<script>
+jQuery('#collaborationCarousel').carouFredSel({
+	width: '100%',
+	scroll: 2
+});
+</script>
+
 <?php get_footer(); ?> 

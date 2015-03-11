@@ -148,6 +148,7 @@ if (!function_exists('NoBordersEnqueueScripts')) {
 		wp_enqueue_script('elslide-ppcustom', get_template_directory_uri() . '/js/vendor/jquerypp.custom.js');
 		wp_enqueue_script('elslide', get_template_directory_uri() . '/js/vendor/jquery.elastislide.js?v=' . time());
 		wp_enqueue_script('masonry', get_template_directory_uri() . '/js/vendor/masonry.pkgd.min.js');
+		wp_enqueue_script('caroufred', get_template_directory_uri() . '/js/vendor/jquery.carouFredSel-6.2.1-packed.js');
 		
 			
 	}// NoBordersEnqueueScripts

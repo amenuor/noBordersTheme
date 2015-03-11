@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NoBorders\n"
-"POT-Creation-Date: 2015-03-07 14:42+0100\n"
-"PO-Revision-Date: 2015-03-07 14:45+0100\n"
+"POT-Creation-Date: 2015-03-11 21:43+0100\n"
+"PO-Revision-Date: 2015-03-11 21:44+0100\n"
 "Last-Translator: \n"
 "Language-Team: YanchWare <contacts@yanchware.com>\n"
 "Language: French\n"
@@ -219,6 +219,10 @@ msgstr "The Railway"
 msgid "Diaries"
 msgstr ""
 
+#: ../front-page.php:345
+msgid "We have worked with"
+msgstr "Nous avons travaillé avec"
+
 #: ../functions.php:39
 msgid "Primary Menu"
 msgstr "Menu principal"
@@ -247,7 +251,7 @@ msgstr "Footer gauche"
 msgid "Footer right"
 msgstr "Footer droit"
 
-#: ../functions.php:180 ../functions.php:187
+#: ../functions.php:181 ../functions.php:188
 msgid "Read More"
 msgstr "Continuez"
 

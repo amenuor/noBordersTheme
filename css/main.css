@@ -409,6 +409,36 @@ h6 img
 
 /* Archives */
 .masonry-brick { width: 220px; margin: 10px; float: left;  }
-#masonryContainer { width: 0 auto; }            
+#masonryContainer { width: 0 auto; }        
+
+/* Collaboration carousel */
+
+.list_carousel {
+	width: 360px;
+}
+.list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.list_carousel li {
+	font-size: 40px;
+	text-align: center;
+	width: 100px;
+	height: 120px;
+	padding: 0;
+	margin: 6px;
+	display: block;
+	float: left;
+}
+.list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+}
+.clearfix {
+	float: none;
+	clear: both;
+}
 
               
