@@ -91,6 +91,9 @@ get_header();
 <hr />
 
 <!-- Latest Blog Posts Blocks -->
+<?php
+	$duplicateControlArr = array();	
+?>
 
 <div class="row">
 <h4 class="text-center"><?php _e("Latest Blog Posts", "noborders"); ?></h4>
@@ -99,11 +102,13 @@ get_header();
 $args = array(
 'posts_per_page' => 3,
 'paged' => $paged,
-'cat' => 9
+'cat' => 9,
+'post__not_in' => $duplicateControlArr
 );
 		
 $latest = new WP_Query( $args );
-while( $latest->have_posts() ) : $latest->the_post(); ?>
+while( $latest->have_posts() ) : $latest->the_post(); 
+$duplicateControlArr[] = get_the_ID();?>
 <div class="large-4 columns">
 <div class="clearfix text-center">
 	<?php 
@@ -164,11 +169,13 @@ while( $latest->have_posts() ) : $latest->the_post(); ?>
 $args = array(
 'posts_per_page' => 3,
 'paged' => $paged,
-'cat' => 7
+'cat' => 7,
+'post__not_in' => $duplicateControlArr
 );
 		
 $latest = new WP_Query( $args );
-while( $latest->have_posts() ) : $latest->the_post(); ?>
+while( $latest->have_posts() ) : $latest->the_post();
+$duplicateControlArr[] = get_the_ID();?>
 <div class="large-4 columns">
 <div class="clearfix text-center">
 <?php 
@@ -195,11 +202,13 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 $args = array(
 'posts_per_page' => 1,
 'paged' => $paged,
-'cat' => 14
+'cat' => 14,
+'post__not_in' => $duplicateControlArr
 );
 		
 $latest = new WP_Query( $args );
-while( $latest->have_posts() ) : $latest->the_post(); ?>
+while( $latest->have_posts() ) : $latest->the_post(); 
+$duplicateControlArr[] = get_the_ID();?>
 <div class="large-12 columns text-center">
 <div class="clearfix text-center">
 <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
@@ -228,11 +237,13 @@ the_post_thumbnail('original');
 $args = array(
 'posts_per_page' => 3,
 'paged' => $paged,
-'cat' => 13
+'cat' => 13,
+'post__not_in' => $duplicateControlArr
 );
 		
 $latest = new WP_Query( $args );
-while( $latest->have_posts() ) : $latest->the_post(); ?>
+while( $latest->have_posts() ) : $latest->the_post();
+$duplicateControlArr[] = get_the_ID();?>
 <div class="large-4 columns">
 <div class="clearfix text-center">
 <?php 
