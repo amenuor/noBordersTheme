@@ -76,6 +76,4 @@ function initMap() {
 	map.controls[google.maps.ControlPosition.LEFT_CENTER].push(
 	  document.getElementById('legend'));
 	
-  	console.log(map.getZoom())
-		
 }
