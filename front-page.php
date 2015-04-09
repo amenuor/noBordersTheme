@@ -362,6 +362,7 @@ if(jQuery('#departureBoard').is(':visible'))
 	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/atlantic.png" /></li>			  
 	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/azione.png" /></li>			  
 	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/bhe.png" /></li>			  
+	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/torto.jpg" /></li>			  
 	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/caffe.png" /></li>			  
 	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/cairopost.png" /></li>			  
 	    <li><img src="<?php echo get_template_directory_uri();?>/img/coll/choisir.png" /></li>			  
