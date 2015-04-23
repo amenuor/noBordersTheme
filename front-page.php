@@ -7,6 +7,8 @@
 
 get_header();
 
+$MAX_TITLE_LENGTH = 50;
+
 ?> 
 
 <!-- First Band (Slider) -->
@@ -116,7 +118,12 @@ $duplicateControlArr[] = get_the_ID();?>
 		the_post_thumbnail('medium');
 	} 
 	?>
-	<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+	<h4 class="text-left"><a href="<?php the_permalink(); ?>"><?php 
+			$title = the_title('', '', FALSE);
+			if (strlen($title) > $MAX_TITLE_LENGTH )
+				$title = substr($title, 0, $MAX_TITLE_LENGTH) . '...';
+			echo $title;
+		?></a></h4>
 	<h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
 	<hr>
 	<div class="text-justify">
@@ -183,7 +190,12 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 	the_post_thumbnail('medium');
 } 
 ?>
-<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+<h4 class="text-left"><a href="<?php the_permalink(); ?>"><?php 
+			$title = the_title('', '', FALSE);
+			if (strlen($title) > $MAX_TITLE_LENGTH )
+				$title = substr($title, 0, $MAX_TITLE_LENGTH) . '...';
+			echo $title;
+		?></a></h4>
 <h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
 <hr>
 				
@@ -251,7 +263,12 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 the_post_thumbnail('medium');
 } 
 ?>
-<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+<h4 class="text-left"><a href="<?php the_permalink(); ?>"><?php 
+			$title = the_title('', '', FALSE);
+			if (strlen($title) > $MAX_TITLE_LENGTH )
+				$title = substr($title, 0, $MAX_TITLE_LENGTH) . '...';
+			echo $title;
+		?></a></h4>
 <h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
 <hr>
 				
