@@ -441,4 +441,8 @@ h6 img
 	clear: both;
 }
 
+h3 ul
+{
+	list-style: none;
+}
               

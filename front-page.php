@@ -240,16 +240,15 @@ the_post_thumbnail('original');
 								
 </div>
 
-<!-- Curiosities Blocks -->
+<!-- Features Blocks -->
 
 <div class="row">
-<h4 class="text-center"><?php _e("Curiosities", "noborders"); ?></h4>
+<h4 class="text-center"><?php _e("Features", "noborders"); ?></h4>
 		
 <?php
 $args = array(
-'posts_per_page' => 3,
-'paged' => $paged,
-'cat' => 13,
+'posts_per_page' => 1,
+'cat' => 510,
 'post__not_in' => $duplicateControlArr
 );
 		
@@ -257,6 +256,7 @@ $latest = new WP_Query( $args );
 while( $latest->have_posts() ) : $latest->the_post();
 $duplicateControlArr[] = get_the_ID();?>
 <div class="large-4 columns">
+<h3 class="text-center"><?php the_category(); ?></h3>
 <div class="clearfix text-center">
 <?php 
 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -278,7 +278,75 @@ the_post_thumbnail('medium');
 </div>
 </div>
 <?php endwhile; ?>
-	
+
+<?php
+$args = array(
+'posts_per_page' => 1,
+'cat' => 511,
+'post__not_in' => $duplicateControlArr
+);
+		
+$latest = new WP_Query( $args );
+while( $latest->have_posts() ) : $latest->the_post();
+$duplicateControlArr[] = get_the_ID();?>
+<div class="large-4 columns">
+<h3 class="text-center"><?php the_category(); ?></h3>
+<div class="clearfix text-center">
+<?php 
+if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+the_post_thumbnail('medium');
+} 
+?>
+<h4 class="text-left"><a href="<?php the_permalink(); ?>"><?php 
+			$title = the_title('', '', FALSE);
+			if (strlen($title) > $MAX_TITLE_LENGTH )
+				$title = substr($title, 0, $MAX_TITLE_LENGTH) . '...';
+			echo $title;
+		?></a></h4>
+<h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
+<hr>
+				
+<div class="text-justify">
+<?php the_excerpt(); ?>
+</div>
+</div>
+</div>
+<?php endwhile; ?>
+
+<?php
+$args = array(
+'posts_per_page' => 1,
+'cat' => 509,
+'post__not_in' => $duplicateControlArr
+);
+		
+$latest = new WP_Query( $args );
+while( $latest->have_posts() ) : $latest->the_post();
+$duplicateControlArr[] = get_the_ID();?>
+<div class="large-4 columns">
+<h3 class="text-center"><?php the_category(); ?></h3>
+<div class="clearfix text-center">
+<?php 
+if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+the_post_thumbnail('medium');
+} 
+?>
+<h4 class="text-left"><a href="<?php the_permalink(); ?>"><?php 
+			$title = the_title('', '', FALSE);
+			if (strlen($title) > $MAX_TITLE_LENGTH )
+				$title = substr($title, 0, $MAX_TITLE_LENGTH) . '...';
+			echo $title;
+		?></a></h4>
+<h6 class="left subheader"><?php the_time('jS M, Y') ?></h6>
+<hr>
+				
+<div class="text-justify">
+<?php the_excerpt(); ?>
+</div>
+</div>
+</div>
+<?php endwhile; ?>
+
 </div>
 
 <div class="row show-for-medium-up">

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NoBorders\n"
-"POT-Creation-Date: 2015-03-11 21:43+0100\n"
-"PO-Revision-Date: 2015-03-11 21:44+0100\n"
+"POT-Creation-Date: 2015-04-28 19:13+0100\n"
+"PO-Revision-Date: 2015-04-28 19:13+0100\n"
 "Last-Translator: \n"
 "Language-Team: YanchWare <contacts@yanchware.com>\n"
 "Language: French\n"
@@ -124,102 +124,102 @@ msgstr "Enregistrez-vous"
 msgid "or follow us on"
 msgstr "ou suivez-nous sur"
 
-#: ../front-page.php:49
+#: ../front-page.php:51
 msgid "Map of "
 msgstr "Carte du "
 
-#: ../front-page.php:50
+#: ../front-page.php:52
 msgid "The Railway diaries"
 msgstr "The Railway Diaries"
 
-#: ../front-page.php:51
+#: ../front-page.php:53
 msgid " - Click on the icons to see more of the project!"
 msgstr " - cliquez sur les icônes pour en savoir plus!"
 
-#: ../front-page.php:96
+#: ../front-page.php:101
 msgid "Latest Blog Posts"
 msgstr "Derniers posts du Blog"
 
-#: ../front-page.php:131
+#: ../front-page.php:143
 msgid "Support us!"
 msgstr "Soutenez-nous"
 
-#: ../front-page.php:135
+#: ../front-page.php:147
 msgid ""
 "If you like our work please donate whatever you can to help us move on with "
 "our projects!"
 msgstr "Si cela vous intéresse , soutenez notre travail avec un don!"
 
-#: ../front-page.php:146
+#: ../front-page.php:158
 msgid "Support Us"
 msgstr "Soutenez-nous"
 
-#: ../front-page.php:161
+#: ../front-page.php:173
 msgid "Latest articles"
 msgstr "Derniers articles"
 
-#: ../front-page.php:225
-msgid "Curiosities"
-msgstr "Curiosité"
+#: ../front-page.php:246
+msgid "Features"
+msgstr "Rubriques"
 
-#: ../front-page.php:259 ../template_projects.php:110
+#: ../front-page.php:352 ../template_projects.php:110
 msgid "Legend"
 msgstr "Légende"
 
-#: ../front-page.php:263 ../template_projects.php:114
+#: ../front-page.php:356 ../template_projects.php:114
 msgid "Photo"
 msgstr "Photos"
 
-#: ../front-page.php:267 ../template_projects.php:118
+#: ../front-page.php:360 ../template_projects.php:118
 msgid "People"
 msgstr "Profiles"
 
-#: ../front-page.php:271 ../template_projects.php:122
+#: ../front-page.php:364 ../template_projects.php:122
 msgid "Blog"
 msgstr "Blog"
 
-#: ../front-page.php:275 ../template_projects.php:126
+#: ../front-page.php:368 ../template_projects.php:126
 msgid "Audio"
 msgstr "Audio"
 
-#: ../front-page.php:279 ../template_projects.php:130
+#: ../front-page.php:372 ../template_projects.php:130
 msgid "Article"
 msgstr "Article"
 
-#: ../front-page.php:283 ../template_projects.php:134
+#: ../front-page.php:376 ../template_projects.php:134
 msgid "Video"
 msgstr "Vidéo"
 
-#: ../front-page.php:301 ../front-page.php:306
+#: ../front-page.php:394 ../front-page.php:399
 #: ../template_project_timeline.php:11 ../template_projects.php:11
 msgid "The Railway Diaries"
 msgstr "The Railway Diaries"
 
-#: ../front-page.php:303 ../front-page.php:323
+#: ../front-page.php:396 ../front-page.php:416
 msgid " days"
 msgstr " journées"
 
-#: ../front-page.php:304 ../front-page.php:324
+#: ../front-page.php:397 ../front-page.php:417
 msgid " steps"
 msgstr " pas"
 
-#: ../front-page.php:308 ../front-page.php:329
+#: ../front-page.php:401 ../front-page.php:422
 msgid " articles"
 msgstr " articles"
 
-#: ../front-page.php:309 ../front-page.php:330
+#: ../front-page.php:402 ../front-page.php:423
 msgid " blog posts"
 msgstr " posts du Blog"
 
-#: ../front-page.php:320 ../front-page.php:326
+#: ../front-page.php:413 ../front-page.php:419
 msgid "The Railway"
 msgstr "The Railway"
 
-#: ../front-page.php:321 ../front-page.php:327
+#: ../front-page.php:414 ../front-page.php:420
 msgid "Diaries"
 msgstr ""
 
-#: ../front-page.php:345
+#: ../front-page.php:438
 msgid "We have worked with"
 msgstr "Nous avons travaillé avec"
 
@@ -307,18 +307,23 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr "réultats de la récherche: %s"
 
-#: ../sidebar-blog.php:4 ../sidebar-carousel.php:17
+#: ../sidebar-blog.php:3
+msgid "Blog Topics"
+msgstr "Cathégories du blog"
+
+#: ../sidebar-blog.php:13 ../sidebar-carousel.php:13
+#: ../template_carousel.php:26
+#, php-format
+msgid "View all posts in %s"
+msgstr "Montres tous les posts en %s"
+
+#: ../sidebar-blog.php:16 ../sidebar-carousel.php:17
 msgid "Random Post"
 msgstr "Random Post"
 
 #: ../sidebar-carousel.php:3 ../template_portfolio.php:13
 msgid "Sections"
 msgstr "Sections"
-
-#: ../sidebar-carousel.php:13 ../template_carousel.php:26
-#, php-format
-msgid "View all posts in %s"
-msgstr "Montres tous les posts en %s"
 
 #: ../template_portfolio.php:38
 msgid "Countries"
@@ -386,7 +391,7 @@ msgstr "Log in pour répondre"
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "lire la suite <span class=\"meta-nav\">&rarr;</span>"
 
-#: ../inc/template-tags.php:277
+#: ../inc/template-tags.php:274
 #, php-format
 msgid ""
 "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
@@ -395,17 +400,17 @@ msgstr ""
 "<span class=\"posted-on\">Publié le %1$s</span><span class=\"byline\"> par "
 "%2$s</span>"
 
-#: ../inc/template-tags.php:285
+#: ../inc/template-tags.php:282
 #, php-format
 msgid "View all posts by %s"
 msgstr "Tous les posts de %s"
 
-#: ../inc/template-tags.php:302
+#: ../inc/template-tags.php:299
 msgid "Tagged"
 msgstr "Tagged"
 
-#~ msgid "Blog Topics"
-#~ msgstr "Cathégories du blog"
+#~ msgid "Curiosities"
+#~ msgstr "Curiosité"
 
 #~ msgid "FrontPage Settings"
 #~ msgstr "Options FrontPage"
