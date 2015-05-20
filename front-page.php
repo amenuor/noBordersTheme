@@ -477,6 +477,11 @@ if(jQuery('#departureBoard').is(':visible'))
 </div>
 </div>
 
+<div class="row text-center" style="margin-top: 50px">
+	<h3><?php _e('With the support of', 'noborders') ?></h3>
+	<img src="<?php echo get_template_directory_uri();?>/img/sponsors/Zonta.jpg" style="width: 50%" />
+</div>
+
 <script>
 jQuery('#collaborationCarousel').carouFredSel({
 	width: '100%',

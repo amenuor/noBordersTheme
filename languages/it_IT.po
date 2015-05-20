@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NoBorders\n"
-"POT-Creation-Date: 2015-04-28 19:11+0100\n"
-"PO-Revision-Date: 2015-04-28 19:12+0100\n"
+"POT-Creation-Date: 2015-05-20 21:21+0100\n"
+"PO-Revision-Date: 2015-05-20 21:21+0100\n"
 "Last-Translator: \n"
 "Language-Team: YanchWare <contacts@yanchware.com>\n"
 "Language: Italian\n"
@@ -164,66 +164,70 @@ msgstr "Ultimi articoli"
 msgid "Features"
 msgstr "Rubriche"
 
-#: ../front-page.php:352 ../template_projects.php:110
+#: ../front-page.php:355 ../template_projects.php:110
 msgid "Legend"
 msgstr "Legenda"
 
-#: ../front-page.php:356 ../template_projects.php:114
+#: ../front-page.php:359 ../template_projects.php:114
 msgid "Photo"
 msgstr "Foto"
 
-#: ../front-page.php:360 ../template_projects.php:118
+#: ../front-page.php:363 ../template_projects.php:118
 msgid "People"
 msgstr "Persone"
 
-#: ../front-page.php:364 ../template_projects.php:122
+#: ../front-page.php:367 ../template_projects.php:122
 msgid "Blog"
 msgstr "Blog"
 
-#: ../front-page.php:368 ../template_projects.php:126
+#: ../front-page.php:371 ../template_projects.php:126
 msgid "Audio"
 msgstr "Audio"
 
-#: ../front-page.php:372 ../template_projects.php:130
+#: ../front-page.php:375 ../template_projects.php:130
 msgid "Article"
 msgstr "Articolo"
 
-#: ../front-page.php:376 ../template_projects.php:134
+#: ../front-page.php:379 ../template_projects.php:134
 msgid "Video"
 msgstr "Video"
 
-#: ../front-page.php:394 ../front-page.php:399
+#: ../front-page.php:397 ../front-page.php:402
 #: ../template_project_timeline.php:11 ../template_projects.php:11
 msgid "The Railway Diaries"
 msgstr "The Railway Diaries"
 
-#: ../front-page.php:396 ../front-page.php:416
+#: ../front-page.php:399 ../front-page.php:419
 msgid " days"
 msgstr " giorni"
 
-#: ../front-page.php:397 ../front-page.php:417
+#: ../front-page.php:400 ../front-page.php:420
 msgid " steps"
 msgstr " passi"
 
-#: ../front-page.php:401 ../front-page.php:422
+#: ../front-page.php:404 ../front-page.php:425
 msgid " articles"
 msgstr " articoli"
 
-#: ../front-page.php:402 ../front-page.php:423
+#: ../front-page.php:405 ../front-page.php:426
 msgid " blog posts"
 msgstr " post sul blog"
 
-#: ../front-page.php:413 ../front-page.php:419
+#: ../front-page.php:416 ../front-page.php:422
 msgid "The Railway"
 msgstr "The Railway"
 
-#: ../front-page.php:414 ../front-page.php:420
+#: ../front-page.php:417 ../front-page.php:423
 msgid "Diaries"
 msgstr ""
 
-#: ../front-page.php:438
+#: ../front-page.php:441
 msgid "We have worked with"
 msgstr "Abbiamo collaborato con"
+
+#: ../front-page.php:481
+msgid "With the support of"
+msgstr "Con il supporto di"
 
 #: ../functions.php:39
 msgid "Primary Menu"
