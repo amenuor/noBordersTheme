@@ -15,7 +15,7 @@ get_header();
 		
 		<?php
 		$args = array(
-		'paged' => $paged,
+		'posts_per_page' => 200,
 		'cat' => 8
 		);
 		

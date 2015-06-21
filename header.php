@@ -46,10 +46,8 @@
 			
 			<?php
 			$args = array(
-			'paged' => $paged,
-			'cat' => 8, //Category for posts that should be on the Google Map
-			'orderby' => 'date',
-			'order' => 'ASC'
+			'posts_per_page' => 200,
+			'cat' => 8
 			);
 			
 			//The Loop
